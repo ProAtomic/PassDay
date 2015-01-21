@@ -13,8 +13,8 @@
 		1174BE411A6F5677009D7DBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE3D1A6F5677009D7DBA /* LaunchScreen.xib */; };
 		1174BE421A6F5677009D7DBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE3F1A6F5677009D7DBA /* Main.storyboard */; };
 		1174BE441A6F5699009D7DBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE431A6F5699009D7DBA /* Images.xcassets */; };
-		1174BE461A6F57C4009D7DBA /* Program.cs in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE451A6F57C4009D7DBA /* Program.cs */; };
-		11A7C19B1A6F62BB00B60BEB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 11A7C19A1A6F62BB00B60BEB /* README.md */; };
+		11A7C19E1A6F635D00B60BEB /* PAPasswordOfTheDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A7C19D1A6F635D00B60BEB /* PAPasswordOfTheDay.m */; };
+		11A7C1A41A6F687300B60BEB /* PAFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A7C1A31A6F687300B60BEB /* PAFirstViewController.m */; };
 		DE136D7BDA514C1E4A55593D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4819A6119574283F86E74B3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +42,11 @@
 		1174BE431A6F5699009D7DBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1174BE451A6F57C4009D7DBA /* Program.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Program.cs; sourceTree = "<group>"; };
 		11A7C19A1A6F62BB00B60BEB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		11A7C19C1A6F635D00B60BEB /* PAPasswordOfTheDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPasswordOfTheDay.h; sourceTree = "<group>"; };
+		11A7C19D1A6F635D00B60BEB /* PAPasswordOfTheDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPasswordOfTheDay.m; sourceTree = "<group>"; };
+		11A7C1A01A6F649400B60BEB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		11A7C1A21A6F687300B60BEB /* PAFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAFirstViewController.h; sourceTree = "<group>"; };
+		11A7C1A31A6F687300B60BEB /* PAFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAFirstViewController.m; sourceTree = "<group>"; };
 		19547B0DE74A26E3435D94E2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		474B9726D7E1EA6265A42D5E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F4819A6119574283F86E74B3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +110,7 @@
 				1174BE3B1A6F565F009D7DBA /* AppDelegate.m */,
 				1174BE111A6F5261009D7DBA /* Info.plist */,
 				1174BE121A6F5261009D7DBA /* main.m */,
+				11A7C1A01A6F649400B60BEB /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			path = SupportingFiles;
@@ -138,6 +144,7 @@
 		1174BE381A6F54C6009D7DBA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				11A7C1A11A6F680500B60BEB /* First */,
 				1174BE3F1A6F5677009D7DBA /* Main.storyboard */,
 				1174BE3D1A6F5677009D7DBA /* LaunchScreen.xib */,
 			);
@@ -148,8 +155,19 @@
 			isa = PBXGroup;
 			children = (
 				1174BE451A6F57C4009D7DBA /* Program.cs */,
+				11A7C19C1A6F635D00B60BEB /* PAPasswordOfTheDay.h */,
+				11A7C19D1A6F635D00B60BEB /* PAPasswordOfTheDay.m */,
 			);
 			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		11A7C1A11A6F680500B60BEB /* First */ = {
+			isa = PBXGroup;
+			children = (
+				11A7C1A21A6F687300B60BEB /* PAFirstViewController.h */,
+				11A7C1A31A6F687300B60BEB /* PAFirstViewController.m */,
+			);
+			path = First;
 			sourceTree = "<group>";
 		};
 		77DBF4F00CACE426EAB95EB6 /* Frameworks */ = {
@@ -256,7 +274,6 @@
 			files = (
 				1174BE441A6F5699009D7DBA /* Images.xcassets in Resources */,
 				1174BE411A6F5677009D7DBA /* LaunchScreen.xib in Resources */,
-				1174BE461A6F57C4009D7DBA /* Program.cs in Resources */,
 				1174BE421A6F5677009D7DBA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,9 +338,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A7C19B1A6F62BB00B60BEB /* README.md in Sources */,
 				1174BE3C1A6F565F009D7DBA /* AppDelegate.m in Sources */,
+				11A7C1A41A6F687300B60BEB /* PAFirstViewController.m in Sources */,
 				1174BE131A6F5261009D7DBA /* main.m in Sources */,
+				11A7C19E1A6F635D00B60BEB /* PAPasswordOfTheDay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = PassDay/SupportingFiles/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/PassDay/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -465,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = PassDay/SupportingFiles/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/PassDay/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
