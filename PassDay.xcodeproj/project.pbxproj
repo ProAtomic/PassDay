@@ -14,6 +14,7 @@
 		1174BE421A6F5677009D7DBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE3F1A6F5677009D7DBA /* Main.storyboard */; };
 		1174BE441A6F5699009D7DBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE431A6F5699009D7DBA /* Images.xcassets */; };
 		1174BE461A6F57C4009D7DBA /* Program.cs in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE451A6F57C4009D7DBA /* Program.cs */; };
+		11A7C19B1A6F62BB00B60BEB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 11A7C19A1A6F62BB00B60BEB /* README.md */; };
 		DE136D7BDA514C1E4A55593D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4819A6119574283F86E74B3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		1174BE401A6F5677009D7DBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1174BE431A6F5699009D7DBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1174BE451A6F57C4009D7DBA /* Program.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Program.cs; sourceTree = "<group>"; };
+		11A7C19A1A6F62BB00B60BEB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		19547B0DE74A26E3435D94E2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		474B9726D7E1EA6265A42D5E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F4819A6119574283F86E74B3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 		1174BE041A6F5261009D7DBA = {
 			isa = PBXGroup;
 			children = (
+				11A7C19A1A6F62BB00B60BEB /* README.md */,
 				1174BE0F1A6F5261009D7DBA /* PassDay */,
 				1174BE291A6F5261009D7DBA /* PassDayTests */,
 				1174BE0E1A6F5261009D7DBA /* Products */,
@@ -213,6 +216,7 @@
 		1174BE051A6F5261009D7DBA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PA;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Property Atomic Strong SAC";
 				TargetAttributes = {
@@ -317,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A7C19B1A6F62BB00B60BEB /* README.md in Sources */,
 				1174BE3C1A6F565F009D7DBA /* AppDelegate.m in Sources */,
 				1174BE131A6F5261009D7DBA /* main.m in Sources */,
 			);
