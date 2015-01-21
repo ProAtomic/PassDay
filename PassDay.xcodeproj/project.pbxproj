@@ -17,7 +17,6 @@
 		1174BE411A6F5677009D7DBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE3D1A6F5677009D7DBA /* LaunchScreen.xib */; };
 		1174BE421A6F5677009D7DBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE3F1A6F5677009D7DBA /* Main.storyboard */; };
 		1174BE441A6F5699009D7DBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE431A6F5699009D7DBA /* Images.xcassets */; };
-		11A7C1A41A6F687300B60BEB /* PAFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A7C1A31A6F687300B60BEB /* PAFirstViewController.m */; };
 		DE136D7BDA514C1E4A55593D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4819A6119574283F86E74B3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +53,6 @@
 		1174BE451A6F57C4009D7DBA /* Program.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Program.cs; sourceTree = "<group>"; };
 		11A7C19A1A6F62BB00B60BEB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		11A7C1A01A6F649400B60BEB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		11A7C1A21A6F687300B60BEB /* PAFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAFirstViewController.h; sourceTree = "<group>"; };
-		11A7C1A31A6F687300B60BEB /* PAFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAFirstViewController.m; sourceTree = "<group>"; };
 		19547B0DE74A26E3435D94E2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		474B9726D7E1EA6265A42D5E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F4819A6119574283F86E74B3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,7 +180,6 @@
 				11731FAE1A7047F400B89183 /* Passwords */,
 				11731FAD1A7047DA00B89183 /* Configuration */,
 				11731FAC1A7047C000B89183 /* Dates */,
-				11A7C1A11A6F680500B60BEB /* First */,
 				1174BE3F1A6F5677009D7DBA /* Main.storyboard */,
 				1174BE3D1A6F5677009D7DBA /* LaunchScreen.xib */,
 			);
@@ -198,15 +194,6 @@
 				11731FA71A702D1F00B89183 /* PAPasswordOfTheDaySI.m */,
 			);
 			path = Algorithm;
-			sourceTree = "<group>";
-		};
-		11A7C1A11A6F680500B60BEB /* First */ = {
-			isa = PBXGroup;
-			children = (
-				11A7C1A21A6F687300B60BEB /* PAFirstViewController.h */,
-				11A7C1A31A6F687300B60BEB /* PAFirstViewController.m */,
-			);
-			path = First;
 			sourceTree = "<group>";
 		};
 		77DBF4F00CACE426EAB95EB6 /* Frameworks */ = {
@@ -380,7 +367,6 @@
 				11731FB11A7048B300B89183 /* PADatesViewController.m in Sources */,
 				11731FB71A7048D000B89183 /* PAPasswordsViewController.m in Sources */,
 				1174BE3C1A6F565F009D7DBA /* AppDelegate.m in Sources */,
-				11A7C1A41A6F687300B60BEB /* PAFirstViewController.m in Sources */,
 				1174BE131A6F5261009D7DBA /* main.m in Sources */,
 				11731FB41A7048C200B89183 /* PAConfigurationViewController.m in Sources */,
 				11731FA81A702D1F00B89183 /* PAPasswordOfTheDaySI.m in Sources */,
