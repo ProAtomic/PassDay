@@ -1,39 +1,22 @@
 //
-//  PAFirstViewController.m
+//  PAConfigurationViewController.m
 //  PassDay
 //
-//  Created by Guillermo Saenz on 1/20/15.
+//  Created by Guillermo Saenz on 1/21/15.
 //  Copyright (c) 2015 Property Atomic Strong SAC. All rights reserved.
 //
 
-#import "PAFirstViewController.h"
+#import "PAConfigurationViewController.h"
 
-#import "PAPasswordOfTheDaySI.h"
-
-@interface PAFirstViewController ()
-
-@property (weak, nonatomic) IBOutlet UILabel *placeHolder;
+@interface PAConfigurationViewController ()
 
 @end
 
-@implementation PAFirstViewController
+@implementation PAConfigurationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"Emepo");
-    
-    NSDate *date = [NSDate date];
-    
-    for (int i  = 0; i<365; i++) {
-        NSLog(@"C%i: %@", i, [[PAPasswordOfTheDaySI sharedInstance] generatePasswordForDay:[date dateByAddingTimeInterval:60*60*24*i]]);
-    }
-    
-    NSLog(@"Termino");
-    
-    NSString *password = [[PAPasswordOfTheDaySI sharedInstance] generatePasswordForToday];
-    
-    [self.placeHolder setText:password];
 }
 
 - (void)didReceiveMemoryWarning {
