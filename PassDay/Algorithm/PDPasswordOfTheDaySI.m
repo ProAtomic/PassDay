@@ -193,7 +193,7 @@ static bool isFirstAccess = YES;
 - (PDPasswordObject *)generatePasswordForDay:(NSDate *)date{
     ReallyDebug
     
-    NSAssert(self.defaultSeed, nil);
+    NSAssert(self.seed, nil);
     NSAssert(date, nil);
     
     NSMutableArray *list1 = [NSMutableArray arrayWithCapacity:10];
