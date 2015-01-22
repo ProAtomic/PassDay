@@ -25,12 +25,12 @@
                                         <state key="normal" title="Back" image="volver"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property Atomic Strong SAC. All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAZ-FS-Ebd">
-                                        <rect key="frame" x="5" y="552" width="590" height="20"/>
+                                        <rect key="frame" x="5" y="552" width="590" height="19.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYF-gT-zjy">
-                                        <rect key="frame" x="15" y="54" width="570" height="493"/>
+                                        <rect key="frame" x="15" y="54" width="570" height="493.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="proAtomic" translatesAutoresizingMaskIntoConstraints="NO" id="kIS-Si-TRq">
                                                 <rect key="frame" x="206" y="0.0" width="158" height="128"/>
@@ -40,9 +40,9 @@
                                                 </constraints>
                                             </imageView>
                                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-ag-tQS">
-                                                <rect key="frame" x="0.0" y="143" width="570" height="350"/>
+                                                <rect key="frame" x="0.0" y="143" width="570" height="350.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <mutableString key="text">This is a an Arris password of the day generator for various Arris cable modems.
+                                                <string key="text">This is a an Arris password of the day generator for various Arris cable modems.
 
 This a port to Objective-C from Raúl Pedro Santos's Javascript generator. Hat's off to Raúl!  You can find Raul's original generator on  https://github.com/borfast/arrispwgen 
 
@@ -58,7 +58,7 @@ Arris TM802G
 Arris TM822G
 Arris TG862
 Arris TG862A
-Arris WBM760A  This is also an open source proyect, you can found it at  https://github.com/ProAtomic/PassDay</mutableString>
+Arris WBM760A  This is also an open source proyect, you can found it at  https://github.com/ProAtomic/PassDay</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -74,11 +74,9 @@ Arris WBM760A  This is also an open source proyect, you can found it at  h
                                             <constraint firstItem="NeQ-ag-tQS" firstAttribute="top" secondItem="kIS-Si-TRq" secondAttribute="bottom" constant="15" id="qDr-hM-1Se"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycy-le-JoU">
-                                        <rect key="frame" x="539" y="5" width="56" height="30"/>
-                                        <state key="normal" title="Write us">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycy-le-JoU">
+                                        <rect key="frame" x="485" y="5" width="110" height="44"/>
+                                        <state key="normal" title="Write us" image="mail"/>
                                         <connections>
                                             <action selector="writeUs:" destination="LVk-XU-yHT" eventType="touchUpInside" id="Gcb-dZ-RRr"/>
                                         </connections>
@@ -153,7 +151,7 @@ Arris WBM760A  This is also an open source proyect, you can found it at  h
                                             <segue destination="0gH-RO-YAN" kind="presentation" identifier="ConfigurationSID" id="YxO-VO-QnH"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wr-68-PoP" userLabel="Dates View">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Wr-68-PoP" userLabel="Dates View">
                                         <rect key="frame" x="140" y="112" width="320" height="356"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aez-Da-MsN">
@@ -177,7 +175,7 @@ Arris WBM760A  This is also an open source proyect, you can found it at  h
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-M8-128" userLabel="End Date Picker">
+                                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-M8-128" userLabel="End Date Picker">
                                                 <rect key="frame" x="0.0" y="194" width="320" height="162"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="443567406.17868">
                                                     <!--2015-01-21 21:10:06 +0000-->
@@ -424,6 +422,7 @@ Arris WBM760A  This is also an open source proyect, you can found it at  h
         <image name="ajustes" width="43" height="43"/>
         <image name="copiar" width="43" height="43"/>
         <image name="generar" width="43" height="43"/>
+        <image name="mail" width="44" height="44"/>
         <image name="proAtomic" width="158" height="128"/>
         <image name="reset" width="43" height="43"/>
         <image name="volver" width="44" height="44"/>
