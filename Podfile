@@ -5,3 +5,4 @@ pod 'iCarousel'
 pod 'pop'
 pod 'TPKeyboardAvoiding', :head
 pod 'JGProgressHUD'
+pod 'UIDevice-Hardware'

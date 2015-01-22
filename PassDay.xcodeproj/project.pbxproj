@@ -13,6 +13,10 @@
 		113D8A591A70B13F00A6484C /* PDCarouselDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113D8A581A70B13F00A6484C /* PDCarouselDateCell.xib */; };
 		113D8A5C1A70B28D00A6484C /* UIView+NibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D8A5B1A70B28D00A6484C /* UIView+NibLoading.m */; };
 		113D8A611A70C6C300A6484C /* PDProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D8A601A70C6C300A6484C /* PDProgressHUD.m */; };
+		11476ACD1A71A5130057E271 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11476ACC1A71A5130057E271 /* Foundation.framework */; };
+		11476ACF1A71A51D0057E271 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11476ACE1A71A51D0057E271 /* MessageUI.framework */; };
+		11476AD21A71A7220057E271 /* UIApplication+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 11476AD11A71A7220057E271 /* UIApplication+Extras.m */; };
+		11476AD41A71A7460057E271 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11476AD31A71A7460057E271 /* CoreTelephony.framework */; };
 		116DD1231A7063C100E7600A /* PDInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116DD1221A7063C100E7600A /* PDInfoViewController.m */; };
 		116DD12A1A70685A00E7600A /* PDVolverButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 116DD1291A70685A00E7600A /* PDVolverButton.m */; };
 		11731FA81A702D1F00B89183 /* PDPasswordOfTheDaySI.m in Sources */ = {isa = PBXBuildFile; fileRef = 11731FA71A702D1F00B89183 /* PDPasswordOfTheDaySI.m */; };
@@ -50,6 +54,11 @@
 		113D8A5B1A70B28D00A6484C /* UIView+NibLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NibLoading.m"; sourceTree = "<group>"; };
 		113D8A5F1A70C6C300A6484C /* PDProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDProgressHUD.h; sourceTree = "<group>"; };
 		113D8A601A70C6C300A6484C /* PDProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDProgressHUD.m; sourceTree = "<group>"; };
+		11476ACC1A71A5130057E271 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		11476ACE1A71A51D0057E271 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		11476AD01A71A7220057E271 /* UIApplication+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Extras.h"; sourceTree = "<group>"; };
+		11476AD11A71A7220057E271 /* UIApplication+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extras.m"; sourceTree = "<group>"; };
+		11476AD31A71A7460057E271 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		116DD1211A7063C100E7600A /* PDInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDInfoViewController.h; sourceTree = "<group>"; };
 		116DD1221A7063C100E7600A /* PDInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDInfoViewController.m; sourceTree = "<group>"; };
 		116DD1281A70685A00E7600A /* PDVolverButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVolverButton.h; sourceTree = "<group>"; };
@@ -85,6 +94,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11476AD41A71A7460057E271 /* CoreTelephony.framework in Frameworks */,
+				11476ACF1A71A51D0057E271 /* MessageUI.framework in Frameworks */,
+				11476ACD1A71A5130057E271 /* Foundation.framework in Frameworks */,
 				DE136D7BDA514C1E4A55593D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +114,8 @@
 		113A3FFD1A706AAF00423DFC /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				11476AD01A71A7220057E271 /* UIApplication+Extras.h */,
+				11476AD11A71A7220057E271 /* UIApplication+Extras.m */,
 				113D8A5A1A70B28D00A6484C /* UIView+NibLoading.h */,
 				113D8A5B1A70B28D00A6484C /* UIView+NibLoading.m */,
 				113A3FFE1A706AD700423DFC /* UIView+Hierarchy.h */,
@@ -267,6 +281,9 @@
 		77DBF4F00CACE426EAB95EB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11476AD31A71A7460057E271 /* CoreTelephony.framework */,
+				11476ACE1A71A51D0057E271 /* MessageUI.framework */,
+				11476ACC1A71A5130057E271 /* Foundation.framework */,
 				F4819A6119574283F86E74B3 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -438,6 +455,7 @@
 				116DD1231A7063C100E7600A /* PDInfoViewController.m in Sources */,
 				116DD12A1A70685A00E7600A /* PDVolverButton.m in Sources */,
 				11731FB71A7048D000B89183 /* PDPasswordsViewController.m in Sources */,
+				11476AD21A71A7220057E271 /* UIApplication+Extras.m in Sources */,
 				113D8A611A70C6C300A6484C /* PDProgressHUD.m in Sources */,
 				113D8A5C1A70B28D00A6484C /* UIView+NibLoading.m in Sources */,
 				1174BE3C1A6F565F009D7DBA /* AppDelegate.m in Sources */,
