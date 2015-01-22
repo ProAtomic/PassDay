@@ -20,19 +20,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPI-ed-5Fa">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw7-C5-ga8" customClass="PDVolverButton">
-                                        <rect key="frame" x="15" y="5" width="69" height="34"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="Go Back">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw7-C5-ga8" customClass="PDVolverButton">
+                                        <rect key="frame" x="15" y="5" width="83" height="43"/>
+                                        <state key="normal" title="Back" image="volver"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="dw7-C5-ga8" firstAttribute="top" secondItem="vPI-ed-5Fa" secondAttribute="top" constant="5" id="f3S-tc-0aF"/>
-                                    <constraint firstItem="dw7-C5-ga8" firstAttribute="leading" secondItem="vPI-ed-5Fa" secondAttribute="leading" constant="15" id="mGG-ZX-72k"/>
+                                    <constraint firstItem="dw7-C5-ga8" firstAttribute="leading" secondItem="vPI-ed-5Fa" secondAttribute="leading" constant="5" id="mGG-ZX-72k"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -64,14 +60,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVy-g6-ufw">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ud9-nj-ptQ">
-                                        <rect key="frame" x="15" y="5" width="46" height="46"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ud9-nj-ptQ">
+                                        <rect key="frame" x="15" y="5" width="44" height="44"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="46" id="YGS-h2-hUZ"/>
-                                            <constraint firstAttribute="height" constant="46" id="p0S-9P-FTZ"/>
+                                            <constraint firstAttribute="width" constant="44" id="YGS-h2-hUZ"/>
+                                            <constraint firstAttribute="height" constant="44" id="p0S-9P-FTZ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="I">
+                                        <state key="normal">
                                             <color key="titleColor" red="7.621079918e-05" green="1" blue="0.66294469869999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -79,32 +74,28 @@
                                             <segue destination="LVk-XU-yHT" kind="presentation" id="raS-CL-aqT"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUT-mj-sDJ">
-                                        <rect key="frame" x="539" y="5" width="46" height="46"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUT-mj-sDJ">
+                                        <rect key="frame" x="541" y="5" width="44" height="44"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="46" id="Xam-XL-5CR"/>
-                                            <constraint firstAttribute="width" constant="46" id="sTM-S0-bcJ"/>
+                                            <constraint firstAttribute="height" constant="44" id="Xam-XL-5CR"/>
+                                            <constraint firstAttribute="width" constant="44" id="sTM-S0-bcJ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="C">
-                                            <color key="titleColor" red="7.621079918e-05" green="1" blue="0.66294469869999995" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                        <state key="normal" image="ajustes"/>
                                         <connections>
                                             <segue destination="0gH-RO-YAN" kind="presentation" identifier="ConfigurationSID" id="YxO-VO-QnH"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wr-68-PoP" userLabel="Dates View">
-                                        <rect key="frame" x="140" y="108" width="320" height="364"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Wr-68-PoP" userLabel="Dates View">
+                                        <rect key="frame" x="140" y="109" width="320" height="362.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aez-Da-MsN">
-                                                <rect key="frame" x="126" y="0.0" width="68" height="20"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aez-Da-MsN">
+                                                <rect key="frame" x="126" y="0.0" width="68" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Cf8-lr-Gra" userLabel="Start Date Picker">
-                                                <rect key="frame" x="0.0" y="20" width="320" height="162"/>
+                                                <rect key="frame" x="0.0" y="19" width="320" height="162"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="443567406.17868">
                                                     <!--2015-01-21 21:10:06 +0000-->
                                                 </date>
@@ -112,14 +103,14 @@
                                                     <action selector="pickerValueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="iac-Uq-i0c"/>
                                                 </connections>
                                             </datePicker>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weD-Zd-eZc">
-                                                <rect key="frame" x="128" y="182" width="64" height="20"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weD-Zd-eZc">
+                                                <rect key="frame" x="128" y="181" width="63.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-M8-128" userLabel="End Date Picker">
-                                                <rect key="frame" x="0.0" y="202" width="320" height="162"/>
+                                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-M8-128" userLabel="End Date Picker">
+                                                <rect key="frame" x="0.0" y="200" width="320" height="162"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="443567406.17868">
                                                     <!--2015-01-21 21:10:06 +0000-->
                                                 </date>
@@ -143,13 +134,10 @@
                                             <constraint firstItem="aez-Da-MsN" firstAttribute="top" secondItem="7Wr-68-PoP" secondAttribute="top" id="ySl-LF-y4h"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV1-pS-n9j">
-                                        <rect key="frame" x="264" y="536" width="72" height="34"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="Generate">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV1-pS-n9j">
+                                        <rect key="frame" x="247" y="527" width="111" height="43"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Generate" image="generar"/>
                                         <connections>
                                             <action selector="generateActn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BIf-EG-vhN"/>
                                         </connections>
@@ -161,7 +149,7 @@
                                     <constraint firstAttribute="bottom" secondItem="JV1-pS-n9j" secondAttribute="bottom" constant="10" id="8KH-cB-55B"/>
                                     <constraint firstItem="7Wr-68-PoP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nVy-g6-ufw" secondAttribute="leading" id="HjJ-1H-0Lh"/>
                                     <constraint firstItem="YUT-mj-sDJ" firstAttribute="top" secondItem="nVy-g6-ufw" secondAttribute="top" constant="5" id="JIG-ek-v5l"/>
-                                    <constraint firstItem="ud9-nj-ptQ" firstAttribute="top" secondItem="nVy-g6-ufw" secondAttribute="top" constant="5" id="LFe-EU-oWa"/>
+                                    <constraint firstItem="ud9-nj-ptQ" firstAttribute="centerY" secondItem="YUT-mj-sDJ" secondAttribute="centerY" id="N8f-iX-uS3"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7Wr-68-PoP" secondAttribute="trailing" id="Ndz-pw-8ea"/>
                                     <constraint firstAttribute="centerY" secondItem="7Wr-68-PoP" secondAttribute="centerY" id="d7Y-S1-1i3"/>
                                     <constraint firstItem="ud9-nj-ptQ" firstAttribute="leading" secondItem="nVy-g6-ufw" secondAttribute="leading" constant="15" id="dAS-IN-GJV"/>
@@ -203,29 +191,26 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gu-i5-yQx">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRk-W7-lpf">
-                                        <rect key="frame" x="540" y="5" width="45" height="34"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="Reset">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRk-W7-lpf">
+                                        <rect key="frame" x="497" y="5" width="88" height="43"/>
+                                        <state key="normal" title="Reset" image="reset"/>
                                         <connections>
                                             <action selector="resetActn:" destination="0gH-RO-YAN" eventType="touchUpInside" id="ddo-Tj-bK9"/>
                                         </connections>
                                     </button>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y3E-Wx-v6s" customClass="TPKeyboardAvoidingScrollView">
-                                        <rect key="frame" x="30" y="44" width="540" height="466"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y3E-Wx-v6s" customClass="TPKeyboardAvoidingScrollView">
+                                        <rect key="frame" x="30" y="53" width="540" height="457"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EXa-jY-Qjt" userLabel="ContentView">
-                                                <rect key="frame" x="0.0" y="0.0" width="540" height="466"/>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EXa-jY-Qjt" userLabel="ContentView">
+                                                <rect key="frame" x="0.0" y="0.0" width="540" height="457"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="QWERTYUIOP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wM2-Au-SPy">
-                                                        <rect key="frame" x="180" y="222" width="180" height="23"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="QWERTYUIOP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wM2-Au-SPy">
+                                                        <rect key="frame" x="180" y="217" width="180" height="23"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="180" id="30G-eg-JTa"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <connections>
                                                             <action selector="editingDidEnd:" destination="0gH-RO-YAN" eventType="editingDidEnd" id="e3N-td-3xI"/>
@@ -248,19 +233,15 @@
                                             <constraint firstAttribute="trailing" secondItem="EXa-jY-Qjt" secondAttribute="trailing" id="z0s-98-t2e"/>
                                         </constraints>
                                     </scrollView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOI-BF-10X" customClass="PDVolverButton">
-                                        <rect key="frame" x="15" y="5" width="69" height="34"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="Go Back">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOI-BF-10X" customClass="PDVolverButton">
+                                        <rect key="frame" x="15" y="5" width="112" height="43"/>
+                                        <state key="normal" title="Back" image="volver"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="570" translatesAutoresizingMaskIntoConstraints="NO" id="uF4-0t-Wtq">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="570" translatesAutoresizingMaskIntoConstraints="NO" id="uF4-0t-Wtq">
                                         <rect key="frame" x="15" y="510" width="570" height="55"/>
                                         <string key="text">This allows you to try a different seed for the password generator. May be useful to test if you found the seed for newer Arris modem models. If you're unsure as to what you should do with this, leave it as is.</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="16"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -269,7 +250,7 @@
                                     <constraint firstItem="Y3E-Wx-v6s" firstAttribute="leading" secondItem="3gu-i5-yQx" secondAttribute="leading" constant="30" id="ALb-l3-yiB"/>
                                     <constraint firstItem="uF4-0t-Wtq" firstAttribute="top" secondItem="Y3E-Wx-v6s" secondAttribute="bottom" id="Crb-ZI-Pc9"/>
                                     <constraint firstAttribute="bottom" secondItem="uF4-0t-Wtq" secondAttribute="bottom" constant="15" id="F8f-xc-SY2"/>
-                                    <constraint firstItem="dOI-BF-10X" firstAttribute="leading" secondItem="3gu-i5-yQx" secondAttribute="leading" constant="15" id="Fyq-nh-djQ"/>
+                                    <constraint firstItem="dOI-BF-10X" firstAttribute="leading" secondItem="3gu-i5-yQx" secondAttribute="leading" constant="5" id="Fyq-nh-djQ"/>
                                     <constraint firstItem="Y3E-Wx-v6s" firstAttribute="top" secondItem="mRk-W7-lpf" secondAttribute="bottom" constant="5" id="M3J-Ug-RCb"/>
                                     <constraint firstItem="mRk-W7-lpf" firstAttribute="top" secondItem="3gu-i5-yQx" secondAttribute="top" constant="5" id="PBa-S5-4nF"/>
                                     <constraint firstAttribute="trailing" secondItem="uF4-0t-Wtq" secondAttribute="trailing" constant="15" id="UWb-Fu-PKU"/>
@@ -311,35 +292,27 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fs-hi-Y8N">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4t4-2U-sYt" customClass="PDVolverButton">
-                                        <rect key="frame" x="15" y="5" width="69" height="34"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="Go Back">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4t4-2U-sYt" customClass="PDVolverButton">
+                                        <rect key="frame" x="10" y="5" width="78" height="43"/>
+                                        <state key="normal" title="Back" image="volver"/>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydn-Iy-R1w" customClass="PDCarousel">
-                                        <rect key="frame" x="30" y="44" width="540" height="511"/>
+                                        <rect key="frame" x="30" y="53" width="540" height="502"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="dataSource" destination="wsO-cm-9Og" id="Ll8-uo-3Kt"/>
                                             <outlet property="delegate" destination="wsO-cm-9Og" id="R8G-UP-yCO"/>
                                         </connections>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3td-gh-66J">
-                                        <rect key="frame" x="543" y="5" width="42" height="34"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="Copy">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3td-gh-66J">
+                                        <rect key="frame" x="500" y="5" width="85" height="43"/>
+                                        <state key="normal" title="Copy" image="copiar"/>
                                         <connections>
                                             <action selector="copyActn:" destination="wsO-cm-9Og" eventType="touchUpInside" id="Dj5-Up-Lh7"/>
                                         </connections>
                                     </button>
                                     <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UzY-fD-5qN">
-                                        <rect key="frame" x="30" y="285" width="540" height="30"/>
+                                        <rect key="frame" x="30" y="289" width="540" height="30"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="YyK-hH-U5j"/>
@@ -350,7 +323,7 @@
                                 <constraints>
                                     <constraint firstItem="UzY-fD-5qN" firstAttribute="centerY" secondItem="ydn-Iy-R1w" secondAttribute="centerY" id="2KU-mB-rKp"/>
                                     <constraint firstItem="4t4-2U-sYt" firstAttribute="top" secondItem="9Fs-hi-Y8N" secondAttribute="top" constant="5" id="8ci-qN-3fD"/>
-                                    <constraint firstItem="4t4-2U-sYt" firstAttribute="leading" secondItem="9Fs-hi-Y8N" secondAttribute="leading" constant="15" id="94y-xQ-x1k"/>
+                                    <constraint firstItem="4t4-2U-sYt" firstAttribute="leading" secondItem="9Fs-hi-Y8N" secondAttribute="leading" constant="5" id="94y-xQ-x1k"/>
                                     <constraint firstAttribute="trailing" secondItem="ydn-Iy-R1w" secondAttribute="trailing" constant="30" id="AUw-qE-4nw"/>
                                     <constraint firstAttribute="trailing" secondItem="3td-gh-66J" secondAttribute="trailing" constant="15" id="Eaq-q2-O8x"/>
                                     <constraint firstItem="UzY-fD-5qN" firstAttribute="trailing" secondItem="ydn-Iy-R1w" secondAttribute="trailing" id="e7c-WU-1TK"/>
@@ -379,4 +352,11 @@
             <point key="canvasLocation" x="561" y="50"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ajustes" width="43" height="43"/>
+        <image name="copiar" width="43" height="43"/>
+        <image name="generar" width="43" height="43"/>
+        <image name="reset" width="43" height="43"/>
+        <image name="volver" width="44" height="44"/>
+    </resources>
 </document>
