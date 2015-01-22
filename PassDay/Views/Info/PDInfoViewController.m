@@ -18,6 +18,8 @@
 
 @interface PDInfoViewController () <MFMailComposeViewControllerDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
 @end
 
 @implementation PDInfoViewController
@@ -32,6 +34,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidLayoutSubviews{
+    ReallyDebug
+    [super viewDidLayoutSubviews];
+    
+    [self.textView setContentOffset:CGPointZero];
+}
+
 - (IBAction)writeUs:(id)sender {
     ReallyDebug
     
@@ -40,7 +49,7 @@
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     
     // Email Subject
-    NSArray *toRecipents = [[NSArray alloc] initWithObjects:[NSString stringWithFormat:@"contato@proatomicdev.com"], nil];
+    NSArray *toRecipents = [[NSArray alloc] initWithObjects:[NSString stringWithFormat:@"contacto@proatomicdev.com"], nil];
     
     [mc setMailComposeDelegate:self];
     [mc setSubject:[NSLocalizedString(@"Desde", nil) stringByAppendingString:@": PassDay"]];
