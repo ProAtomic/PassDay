@@ -20,15 +20,55 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPI-ed-5Fa">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw7-C5-ga8" customClass="PDVolverButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw7-C5-ga8" customClass="PDVolverButton">
                                         <rect key="frame" x="5" y="5" width="79" height="44"/>
                                         <state key="normal" title="Back" image="volver"/>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property Atomic Strong SAC. All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAZ-FS-Ebd">
+                                        <rect key="frame" x="5" y="552" width="590" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYF-gT-zjy">
+                                        <rect key="frame" x="15" y="54" width="570" height="493"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="proAtomic" translatesAutoresizingMaskIntoConstraints="NO" id="kIS-Si-TRq">
+                                                <rect key="frame" x="206" y="0.0" width="158" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="158" id="QEu-bi-wz2"/>
+                                                    <constraint firstAttribute="height" constant="128" id="syY-yl-ESL"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-ag-tQS">
+                                                <rect key="frame" x="0.0" y="143" width="570" height="350"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="NeQ-ag-tQS" secondAttribute="trailing" id="9uG-uu-sSl"/>
+                                            <constraint firstAttribute="centerX" secondItem="kIS-Si-TRq" secondAttribute="centerX" id="Cip-cy-dzJ"/>
+                                            <constraint firstItem="kIS-Si-TRq" firstAttribute="top" secondItem="sYF-gT-zjy" secondAttribute="top" id="GKS-KK-OPa"/>
+                                            <constraint firstItem="NeQ-ag-tQS" firstAttribute="leading" secondItem="sYF-gT-zjy" secondAttribute="leading" id="H9e-Zj-Tkn"/>
+                                            <constraint firstAttribute="bottom" secondItem="NeQ-ag-tQS" secondAttribute="bottom" id="e97-nc-1Jc"/>
+                                            <constraint firstItem="NeQ-ag-tQS" firstAttribute="top" secondItem="kIS-Si-TRq" secondAttribute="bottom" constant="15" id="qDr-hM-1Se"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mAZ-FS-Ebd" secondAttribute="trailing" constant="5" id="0iS-aG-CnU"/>
+                                    <constraint firstAttribute="bottom" secondItem="mAZ-FS-Ebd" secondAttribute="bottom" constant="8" id="BFY-jp-pzw"/>
+                                    <constraint firstItem="sYF-gT-zjy" firstAttribute="leading" secondItem="vPI-ed-5Fa" secondAttribute="leading" constant="15" id="EjZ-re-KWF"/>
+                                    <constraint firstItem="mAZ-FS-Ebd" firstAttribute="leading" secondItem="vPI-ed-5Fa" secondAttribute="leading" constant="5" id="TbX-lv-RPF"/>
+                                    <constraint firstAttribute="trailing" secondItem="sYF-gT-zjy" secondAttribute="trailing" constant="15" id="XBz-Wj-H7f"/>
                                     <constraint firstItem="dw7-C5-ga8" firstAttribute="top" secondItem="vPI-ed-5Fa" secondAttribute="top" constant="5" id="f3S-tc-0aF"/>
                                     <constraint firstItem="dw7-C5-ga8" firstAttribute="leading" secondItem="vPI-ed-5Fa" secondAttribute="leading" constant="5" id="mGG-ZX-72k"/>
+                                    <constraint firstItem="mAZ-FS-Ebd" firstAttribute="top" secondItem="sYF-gT-zjy" secondAttribute="bottom" constant="5" id="maq-ID-eLm"/>
+                                    <constraint firstItem="sYF-gT-zjy" firstAttribute="top" secondItem="dw7-C5-ga8" secondAttribute="bottom" constant="5" id="xuT-SR-qh2"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -85,7 +125,7 @@
                                             <segue destination="0gH-RO-YAN" kind="presentation" identifier="ConfigurationSID" id="YxO-VO-QnH"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Wr-68-PoP" userLabel="Dates View">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wr-68-PoP" userLabel="Dates View">
                                         <rect key="frame" x="140" y="112" width="320" height="356"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aez-Da-MsN">
@@ -109,7 +149,7 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-M8-128" userLabel="End Date Picker">
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-M8-128" userLabel="End Date Picker">
                                                 <rect key="frame" x="0.0" y="194" width="320" height="162"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="443567406.17868">
                                                     <!--2015-01-21 21:10:06 +0000-->
@@ -240,7 +280,7 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOI-BF-10X" customClass="PDVolverButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOI-BF-10X" customClass="PDVolverButton">
                                         <rect key="frame" x="5" y="5" width="79" height="44"/>
                                         <state key="normal" title="Back" image="volver"/>
                                     </button>
@@ -292,11 +332,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fs-hi-Y8N">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4t4-2U-sYt" customClass="PDVolverButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4t4-2U-sYt" customClass="PDVolverButton">
                                         <rect key="frame" x="5" y="5" width="79" height="44"/>
                                         <state key="normal" title="Back" image="volver"/>
                                     </button>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ydn-Iy-R1w" customClass="PDCarousel">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydn-Iy-R1w" customClass="PDCarousel">
                                         <rect key="frame" x="30" y="54" width="540" height="501"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
@@ -311,7 +351,7 @@
                                             <action selector="copyActn:" destination="wsO-cm-9Og" eventType="touchUpInside" id="Dj5-Up-Lh7"/>
                                         </connections>
                                     </button>
-                                    <view alpha="0.10000000000000001" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UzY-fD-5qN">
+                                    <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UzY-fD-5qN">
                                         <rect key="frame" x="30" y="290" width="540" height="30"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -356,6 +396,7 @@
         <image name="ajustes" width="43" height="43"/>
         <image name="copiar" width="43" height="43"/>
         <image name="generar" width="43" height="43"/>
+        <image name="proAtomic" width="158" height="128"/>
         <image name="reset" width="43" height="43"/>
         <image name="volver" width="44" height="44"/>
     </resources>
