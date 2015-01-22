@@ -42,6 +42,23 @@
                                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-ag-tQS">
                                                 <rect key="frame" x="0.0" y="143" width="570" height="350"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <mutableString key="text">This is a an Arris password of the day generator for various Arris cable modems.
+
+This a port to Objective-C from Raúl Pedro Santos's Javascript generator. Hat's off to Raúl!  You can find Raul's post on https://github.com/borfast/arrispwgen 
+
+This is a list of modems for which this password generator generates valid passwords.
+Arris CM820A
+Arris DG860
+Arris DG950A
+Arris TM501A
+Arris TM602A
+Arris TM602B
+Arris TM722G
+Arris TM802G
+Arris TM822G
+Arris TG862
+Arris TG862A
+Arris WBM760A</mutableString>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
