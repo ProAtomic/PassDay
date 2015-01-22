@@ -13,11 +13,14 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-#import "PAPasswordOfTheDaySI.h"
+#import "PDPasswordOfTheDaySI.h"
 
 // Categories
+#import "UIView+Hierarchy.h"
+#import "UIView+NibLoading.h"
+
 /*#import "NSManagedObject+Extras.h"
- #import "UIView+Hierarchy.h"
+ 
  #import "UIView+Animations.h"
  #import "UIView+NibLoading.h"
  #import "UIViewController+Utils.h"

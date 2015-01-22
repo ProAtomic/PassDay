@@ -1,29 +1,29 @@
 //
-//  PAPasswordOfTheDaySI.m
+//  PDPasswordOfTheDaySI.m
 //  PassDay
 //
 //  Created by Guillermo Saenz on 1/21/15.
 //  Copyright (c) 2015 Property Atomic Strong SAC. All rights reserved.
 //
 
-#import "PAPasswordOfTheDaySI.h"
+#import "PDPasswordOfTheDaySI.h"
 
 #define Debug 0
 
 static NSString *defaultSeed = @"MPSJKMDHAI";
 
-@interface PAPasswordOfTheDaySI ()
+@interface PDPasswordOfTheDaySI ()
 
 @property (nonatomic, strong) NSString *seed8;
 @property (nonatomic, strong) NSArray *tableValues1, *tableValues2, *alphanumValuesTable;
-@property (nonatomic, strong) NSDateFormatter *dateFormatterYear, *dateFormatterMonth, *dateFormatterDay;
+@property (nonatomic, strong) NSDateFormatter *dateFormatterYear, *dateFormatterMonth, *dateFormatterDay, *dateFormatterComplete;
 @property (nonatomic, strong) NSCalendar *calendar;
 
 @end
 
-@implementation PAPasswordOfTheDaySI
+@implementation PDPasswordOfTheDaySI
 
-static PAPasswordOfTheDaySI *SINGLETON = nil;
+static PDPasswordOfTheDaySI *SINGLETON = nil;
 
 static bool isFirstAccess = YES;
 
@@ -54,11 +54,11 @@ static bool isFirstAccess = YES;
 }
 
 - (id)copy{
-    return [[PAPasswordOfTheDaySI alloc] init];
+    return [[PDPasswordOfTheDaySI alloc] init];
 }
 
 - (id)mutableCopy{
-    return [[PAPasswordOfTheDaySI alloc] init];
+    return [[PDPasswordOfTheDaySI alloc] init];
 }
 
 - (id) init{
@@ -71,7 +71,7 @@ static bool isFirstAccess = YES;
     self = [super init];
     
     if (self) {
-        [self setSeed:[PAPasswordOfTheDaySI defaultSeed]];
+        [self setSeed:[PDPasswordOfTheDaySI defaultSeed]];
         [self setTables];
         [self setupDateFormatters];
     }
@@ -124,17 +124,64 @@ static bool isFirstAccess = YES;
     [self.dateFormatterMonth setDateFormat:@"MM"];
     self.dateFormatterDay = [NSDateFormatter new];
     [self.dateFormatterDay setDateFormat:@"dd"];
+    self.dateFormatterComplete = [NSDateFormatter new];
+    [self.dateFormatterComplete setDateFormat:@"MM/dd/YYYY"];
     
     self.calendar = [NSCalendar currentCalendar];
 }
 
 #pragma mark - Algorithm
 
-- (NSString *)generatePasswordForToday{
+- (PDPasswordObject *)generatePasswordForToday{
     return [self generatePasswordForDay:[NSDate date]];
 }
 
-- (NSString *)generatePasswordForDay:(NSDate *)date{
+- (void)generatePasswordFromStartDay:(NSDate *)startDay toEndDay:(NSDate *)endDay withCompletion:(void (^)(NSArray *passwordsArray))completion withFailure:(void (^)(PDAlgorithmFailure algorithmFailure))failure{
+    ReallyDebug
+    
+    NSAssert(startDay, nil);
+    NSAssert(endDay, nil);
+    NSAssert(completion, nil);
+    NSAssert(failure, nil);
+    
+    NSDate *fromDate;
+    NSDate *toDate;
+    
+    [self.calendar rangeOfUnit:NSDayCalendarUnit startDate:&fromDate interval:NULL forDate:startDay];
+    [self.calendar rangeOfUnit:NSDayCalendarUnit startDate:&toDate interval:NULL forDate:endDay];
+    
+    NSDateComponents *difference = [self.calendar components:NSDayCalendarUnit fromDate:fromDate toDate:toDate options:0];
+    
+    NSInteger numberOfDays = [difference day]+1;
+    
+    if (numberOfDays>365) {
+        failure(PDAlgorithmFailureOutOfBounds);
+        return;
+    }else if (numberOfDays<1){
+        failure(PDAlgorithmFailureNegativeRestDates);
+        return;
+    }
+    
+    NSDateComponents *dayComponent = [NSDateComponents new];
+    dayComponent.day = 1;
+    
+    NSMutableArray *passwords = [NSMutableArray array];
+    NSDate *tempDate = startDay;
+    for (int i = 0; i<numberOfDays; i++) {
+        if (i!=0) tempDate = [self.calendar dateByAddingComponents:dayComponent toDate:tempDate options:0];
+        [passwords addObject:[self generatePasswordForDay:tempDate]];
+    }
+
+    if (passwords) {
+        completion ([passwords copy]);
+        return;
+    }else{
+        failure(PDAlgorithmFailureIterationError);
+        return;
+    }
+}
+
+- (PDPasswordObject *)generatePasswordForDay:(NSDate *)date{
     ReallyDebug
     
     NSAssert(self.defaultSeed, nil);
@@ -213,7 +260,11 @@ static bool isFirstAccess = YES;
         passwordOfTheDay = [passwordOfTheDay stringByAppendingString:self.alphanumValuesTable[[list5[i] intValue]]];
     }
     
-    return passwordOfTheDay;
+    PDPasswordObject *pObject = [PDPasswordObject new];
+    [pObject setPassword:passwordOfTheDay];
+    [pObject setDate:[self.dateFormatterComplete stringFromDate:date]];
+    
+    return pObject;
 }
 
 #pragma mark - Returns
@@ -221,5 +272,9 @@ static bool isFirstAccess = YES;
 + (NSString *)defaultSeed{
     return defaultSeed;
 }
+
+@end
+
+@implementation PDPasswordObject
 
 @end

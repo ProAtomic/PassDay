@@ -1,13 +1,13 @@
 //
-//  PAConfigurationViewController.h
+//  PDCarouselDateCell.m
 //  PassDay
 //
 //  Created by Guillermo Saenz on 1/21/15.
 //  Copyright (c) 2015 Property Atomic Strong SAC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "PDCarouselDateCell.h"
 
-@interface PAConfigurationViewController : UIViewController
+@implementation PDCarouselDateCell
 
 @end

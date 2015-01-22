@@ -1,5 +1,5 @@
 //
-//  PAPasswordsViewController.h
+//  PDCarouselDateCell.h
 //  PassDay
 //
 //  Created by Guillermo Saenz on 1/21/15.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PAPasswordsViewController : UIViewController
+@interface PDCarouselDateCell : UIView
+
+@property (weak, nonatomic) IBOutlet UILabel *lblPassword;
 
 @end
