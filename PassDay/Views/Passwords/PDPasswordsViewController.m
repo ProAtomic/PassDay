@@ -9,6 +9,7 @@
 #import "PDPasswordsViewController.h"
 
 #import "PDCarousel.h"
+#import "PDProgressHUD.h"
 
 #define Debug 0
 
@@ -29,7 +30,8 @@
         self.generatedPasswords = passwordsArray;
         [self.carouselView reloadData];
     } withFailure:^(PDAlgorithmFailure algorithmFailure) {
-        NSLog(@"F %i", (int)algorithmFailure);
+        PDProgressHUD *progressHUD = [PDProgressHUD newWithText:NSLocalizedString(@"Error!", nil)];
+        [progressHUD showInView:self.view];
     }];
 }
 
@@ -77,6 +79,9 @@
     
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     [pasteboard setString:object.password];
+    
+    PDProgressHUD *progressHUD = [PDProgressHUD newWithText:NSLocalizedString(@"Password\nCopied", nil)];
+    [progressHUD showInView:self.view];
 }
 
 @end

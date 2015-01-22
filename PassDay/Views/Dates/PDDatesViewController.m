@@ -9,6 +9,7 @@
 #import "PDDatesViewController.h"
 
 #import "PDPasswordsViewController.h"
+#import "PDProgressHUD.h"
 
 #define Debug 0
 
@@ -54,11 +55,15 @@
     NSInteger numberOfDays = [difference day]+1;
     
     if (numberOfDays>365) {
-        NSLog(@"No pueden ser mas de 365 dias");
+        
+        PDProgressHUD *progressHUD = [PDProgressHUD newWithText:NSLocalizedString(@"Less than 365\ndays please", nil)];
+        [progressHUD showInView:self.view];
         
         return;
     }else if (numberOfDays<1){
-        NSLog(@"Fechas negativas!");
+        
+        PDProgressHUD *progressHUD = [PDProgressHUD newWithText:NSLocalizedString(@"Negative dates\nnot allowed!", nil)];
+        [progressHUD showInView:self.view];
         
         [self.datePickerStart setDate:[NSDate date]];
         [self.datePickerEnd setDate:[NSDate date]];

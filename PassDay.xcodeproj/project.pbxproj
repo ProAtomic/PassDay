@@ -12,6 +12,7 @@
 		113D8A571A70B13100A6484C /* PDCarouselDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D8A561A70B13100A6484C /* PDCarouselDateCell.m */; };
 		113D8A591A70B13F00A6484C /* PDCarouselDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113D8A581A70B13F00A6484C /* PDCarouselDateCell.xib */; };
 		113D8A5C1A70B28D00A6484C /* UIView+NibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D8A5B1A70B28D00A6484C /* UIView+NibLoading.m */; };
+		113D8A611A70C6C300A6484C /* PDProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D8A601A70C6C300A6484C /* PDProgressHUD.m */; };
 		116DD1231A7063C100E7600A /* PDInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116DD1221A7063C100E7600A /* PDInfoViewController.m */; };
 		116DD12A1A70685A00E7600A /* PDVolverButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 116DD1291A70685A00E7600A /* PDVolverButton.m */; };
 		11731FA81A702D1F00B89183 /* PDPasswordOfTheDaySI.m in Sources */ = {isa = PBXBuildFile; fileRef = 11731FA71A702D1F00B89183 /* PDPasswordOfTheDaySI.m */; };
@@ -47,6 +48,8 @@
 		113D8A581A70B13F00A6484C /* PDCarouselDateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PDCarouselDateCell.xib; sourceTree = "<group>"; };
 		113D8A5A1A70B28D00A6484C /* UIView+NibLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NibLoading.h"; sourceTree = "<group>"; };
 		113D8A5B1A70B28D00A6484C /* UIView+NibLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NibLoading.m"; sourceTree = "<group>"; };
+		113D8A5F1A70C6C300A6484C /* PDProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDProgressHUD.h; sourceTree = "<group>"; };
+		113D8A601A70C6C300A6484C /* PDProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDProgressHUD.m; sourceTree = "<group>"; };
 		116DD1211A7063C100E7600A /* PDInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDInfoViewController.h; sourceTree = "<group>"; };
 		116DD1221A7063C100E7600A /* PDInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDInfoViewController.m; sourceTree = "<group>"; };
 		116DD1281A70685A00E7600A /* PDVolverButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVolverButton.h; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 				116DD1291A70685A00E7600A /* PDVolverButton.m */,
 				113D8A511A70AD6C00A6484C /* PDCarousel.h */,
 				113D8A521A70AD6C00A6484C /* PDCarousel.m */,
+				113D8A5F1A70C6C300A6484C /* PDProgressHUD.h */,
+				113D8A601A70C6C300A6484C /* PDProgressHUD.m */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -433,6 +438,7 @@
 				116DD1231A7063C100E7600A /* PDInfoViewController.m in Sources */,
 				116DD12A1A70685A00E7600A /* PDVolverButton.m in Sources */,
 				11731FB71A7048D000B89183 /* PDPasswordsViewController.m in Sources */,
+				113D8A611A70C6C300A6484C /* PDProgressHUD.m in Sources */,
 				113D8A5C1A70B28D00A6484C /* UIView+NibLoading.m in Sources */,
 				1174BE3C1A6F565F009D7DBA /* AppDelegate.m in Sources */,
 				1174BE131A6F5261009D7DBA /* main.m in Sources */,

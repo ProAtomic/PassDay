@@ -25,13 +25,6 @@
     [self.lblSeed setText:[[PDPasswordOfTheDaySI sharedInstance] seed]];
 }
 
-- (void)viewWillDisappear:(BOOL)animated{
-    ReallyDebug
-    [super viewWillDisappear:animated];
-    
-    if (![self.lblSeed.text isEqualToString:[PDPasswordOfTheDaySI defaultSeed]]) [[PDPasswordOfTheDaySI sharedInstance] setSeed:self.lblSeed.text];
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -39,10 +32,17 @@
 
 #pragma mark - Action
 
+- (IBAction)editingDidEnd:(id)sender {
+    ReallyDebug
+    
+    if (![self.lblSeed.text isEqualToString:[[PDPasswordOfTheDaySI sharedInstance] seed]]) [[PDPasswordOfTheDaySI sharedInstance] setSeed:self.lblSeed.text];
+}
+
 - (IBAction)resetActn:(id)sender {
     ReallyDebug
     
     [self.lblSeed setText:[PDPasswordOfTheDaySI defaultSeed]];
+    [self editingDidEnd:nil];
 }
 
 @end

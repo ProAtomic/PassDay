@@ -71,7 +71,9 @@ static bool isFirstAccess = YES;
     self = [super init];
     
     if (self) {
-        [self setSeed:[PDPasswordOfTheDaySI defaultSeed]];
+        NSString *savedSeed = [[NSUserDefaults standardUserDefaults] stringForKey:@"seedKey"];
+        
+        [self setSeed:savedSeed?savedSeed:[PDPasswordOfTheDaySI defaultSeed]];
         [self setTables];
         [self setupDateFormatters];
     }
@@ -84,6 +86,13 @@ static bool isFirstAccess = YES;
     
     _seed = seed;
     self.seed8 = [seed substringToIndex:8];
+    
+    NSString *savedSeed = [[NSUserDefaults standardUserDefaults] stringForKey:@"seedKey"];
+    
+    if (![savedSeed isEqualToString:seed]) {
+        [[NSUserDefaults standardUserDefaults] setObject:seed forKey:@"seedKey"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
 }
 
 - (void)setTables{
