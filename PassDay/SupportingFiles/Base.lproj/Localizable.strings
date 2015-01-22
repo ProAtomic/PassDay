@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+
+  Created by Guillermo Sáenz on 11/6/14.
+  Copyright (c) 2015 Property Atomic Strong SAC. All rights reserved.
+*/
+"Desde" = "From";
+"Versión" = "Version";
+"Dispositivo" = "Device";
+"Tipo de conexión" = "Connection type";
+"Especificaciones" = "Especifications";
+"Less than 365\ndays please" = "Less than 365\ndays please";
+"Negative dates\nnot allowed!" = "Negative dates\nnot allowed!";
+"Error!" = "Error!";
+"Password\nCopied" = "Password\nCopied";

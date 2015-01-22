@@ -29,6 +29,7 @@
 		1174BE411A6F5677009D7DBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE3D1A6F5677009D7DBA /* LaunchScreen.xib */; };
 		1174BE421A6F5677009D7DBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE3F1A6F5677009D7DBA /* Main.storyboard */; };
 		1174BE441A6F5699009D7DBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE431A6F5699009D7DBA /* Images.xcassets */; };
+		11C808F01A71B37100CEB635 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11C808F21A71B37100CEB635 /* Localizable.strings */; };
 		DE136D7BDA514C1E4A55593D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4819A6119574283F86E74B3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		11476AD01A71A7220057E271 /* UIApplication+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Extras.h"; sourceTree = "<group>"; };
 		11476AD11A71A7220057E271 /* UIApplication+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extras.m"; sourceTree = "<group>"; };
 		11476AD31A71A7460057E271 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		11476AD51A71AE800057E271 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		116DD1211A7063C100E7600A /* PDInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDInfoViewController.h; sourceTree = "<group>"; };
 		116DD1221A7063C100E7600A /* PDInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDInfoViewController.m; sourceTree = "<group>"; };
 		116DD1281A70685A00E7600A /* PDVolverButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVolverButton.h; sourceTree = "<group>"; };
@@ -84,6 +86,8 @@
 		1174BE431A6F5699009D7DBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		11A7C19A1A6F62BB00B60BEB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		11A7C1A01A6F649400B60BEB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		11C808F51A71B38E00CEB635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11C808F61A71B3A400CEB635 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		19547B0DE74A26E3435D94E2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		474B9726D7E1EA6265A42D5E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F4819A6119574283F86E74B3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,6 +225,7 @@
 		1174BE101A6F5261009D7DBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				11C808F21A71B37100CEB635 /* Localizable.strings */,
 				1174BE3A1A6F5657009D7DBA /* AppDelegate.h */,
 				1174BE3B1A6F565F009D7DBA /* AppDelegate.m */,
 				1174BE111A6F5261009D7DBA /* Info.plist */,
@@ -366,6 +371,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 1174BE041A6F5261009D7DBA;
 			productRefGroup = 1174BE0E1A6F5261009D7DBA /* Products */;
@@ -383,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C808F01A71B37100CEB635 /* Localizable.strings in Resources */,
 				1174BE441A6F5699009D7DBA /* Images.xcassets in Resources */,
 				1174BE411A6F5677009D7DBA /* LaunchScreen.xib in Resources */,
 				1174BE421A6F5677009D7DBA /* Main.storyboard in Resources */,
@@ -498,8 +505,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				1174BE401A6F5677009D7DBA /* Base */,
+				11476AD51A71AE800057E271 /* es */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11C808F21A71B37100CEB635 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11C808F51A71B38E00CEB635 /* Base */,
+				11C808F61A71B3A400CEB635 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
