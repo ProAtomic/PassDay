@@ -24,14 +24,17 @@
                                         <rect key="frame" x="5" y="5" width="79" height="44"/>
                                         <state key="normal" title="Back" image="volver"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property Atomic Strong SAC. All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="590" translatesAutoresizingMaskIntoConstraints="NO" id="mAZ-FS-Ebd">
-                                        <rect key="frame" x="5" y="556" width="590" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property Atomic Strong SAC. All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="mAZ-FS-Ebd">
+                                        <rect key="frame" x="5" y="534" width="590" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="A9X-Be-z3p"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYF-gT-zjy">
-                                        <rect key="frame" x="15" y="54" width="570" height="497"/>
+                                        <rect key="frame" x="15" y="54" width="570" height="475"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="proAtomic" translatesAutoresizingMaskIntoConstraints="NO" id="kIS-Si-TRq">
                                                 <rect key="frame" x="206" y="0.0" width="158" height="128"/>
@@ -41,9 +44,9 @@
                                                 </constraints>
                                             </imageView>
                                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-ag-tQS">
-                                                <rect key="frame" x="0.0" y="143" width="570" height="354"/>
+                                                <rect key="frame" x="0.0" y="143" width="570" height="332"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <mutableString key="text">This is a an Arris password of the day generator for various Arris cable modems.
+                                                <string key="text">This is a an Arris password of the day generator for various Arris cable modems.
 
 This a port to Objective-C from Raúl Pedro Santos's Javascript generator. Hat's off to Raúl!
 
@@ -65,7 +68,7 @@ Arris TG862A
 Arris WBM760A
 
 This is also an open source project, you can find it at 
-https://github.com/ProAtomic/PassDay</mutableString>
+https://github.com/ProAtomic/PassDay</string>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
