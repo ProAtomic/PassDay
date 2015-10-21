@@ -25,6 +25,9 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+#define IfDebug Debug==1
+#define ReallyDebug if(IfDebug)NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
+
 #import "PDPasswordOfTheDaySI.h"
 
 #define Debug 0
@@ -175,10 +178,10 @@ static bool isFirstAccess = YES;
     NSDate *fromDate;
     NSDate *toDate;
     
-    [self.calendar rangeOfUnit:NSDayCalendarUnit startDate:&fromDate interval:NULL forDate:startDay];
-    [self.calendar rangeOfUnit:NSDayCalendarUnit startDate:&toDate interval:NULL forDate:endDay];
+    [self.calendar rangeOfUnit:NSCalendarUnitDay startDate:&fromDate interval:NULL forDate:startDay];
+    [self.calendar rangeOfUnit:NSCalendarUnitDay startDate:&toDate interval:NULL forDate:endDay];
     
-    NSDateComponents *difference = [self.calendar components:NSDayCalendarUnit fromDate:fromDate toDate:toDate options:0];
+    NSDateComponents *difference = [self.calendar components:NSCalendarUnitDay fromDate:fromDate toDate:toDate options:0];
     
     NSInteger numberOfDays = [difference day]+1;
     
@@ -233,7 +236,7 @@ static bool isFirstAccess = YES;
     int dayOfMonth = [[self.dateFormatterDay stringFromDate:date] intValue];
     
     // Day of the week. Normally 0 would be Sunday but we need it to be Monday.
-    NSDateComponents *dateC = [self.calendar components:NSWeekdayCalendarUnit fromDate:date];
+    NSDateComponents *dateC = [self.calendar components:NSCalendarUnitWeekday fromDate:date];
     int dayOfWeek = (int)[dateC weekday] - 2;
     
     if (dayOfWeek < 0) {

@@ -25,6 +25,14 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+#import <UIKit/UIKit.h>
+
+//! Project version number for PDPasswordOfTheDaySI.
+FOUNDATION_EXPORT double PDPasswordOfTheDaySIVersionNumber;
+
+//! Project version string for PDPasswordOfTheDaySI.
+FOUNDATION_EXPORT const unsigned char PDPasswordOfTheDaySIVersionString[];
+
 typedef enum : NSUInteger {
     PDAlgorithmFailureOutOfBounds,
     PDAlgorithmFailureNegativeRestDates,

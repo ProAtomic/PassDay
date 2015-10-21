@@ -19,7 +19,6 @@
 		11476AD41A71A7460057E271 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11476AD31A71A7460057E271 /* CoreTelephony.framework */; };
 		116DD1231A7063C100E7600A /* PDInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116DD1221A7063C100E7600A /* PDInfoViewController.m */; };
 		116DD12A1A70685A00E7600A /* PDVolverButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 116DD1291A70685A00E7600A /* PDVolverButton.m */; };
-		11731FA81A702D1F00B89183 /* PDPasswordOfTheDaySI.m in Sources */ = {isa = PBXBuildFile; fileRef = 11731FA71A702D1F00B89183 /* PDPasswordOfTheDaySI.m */; };
 		11731FB11A7048B300B89183 /* PDDatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11731FB01A7048B300B89183 /* PDDatesViewController.m */; };
 		11731FB41A7048C200B89183 /* PDConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11731FB31A7048C200B89183 /* PDConfigurationViewController.m */; };
 		11731FB71A7048D000B89183 /* PDPasswordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11731FB61A7048D000B89183 /* PDPasswordsViewController.m */; };
@@ -33,6 +32,13 @@
 		11AC7A701BD7470300A0D06F /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC7A6F1BD7470300A0D06F /* TodayViewController.m */; };
 		11AC7A731BD7470300A0D06F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AC7A711BD7470300A0D06F /* MainInterface.storyboard */; };
 		11AC7A771BD7470300A0D06F /* PassDay Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 11AC7A6A1BD7470300A0D06F /* PassDay Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		11AC7AB01BD74E3100A0D06F /* PDPasswordOfTheDay.h in Headers */ = {isa = PBXBuildFile; fileRef = 11AC7AAF1BD74E3100A0D06F /* PDPasswordOfTheDay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11AC7AB71BD74E3100A0D06F /* PDPasswordOfTheDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AC7AAD1BD74E3100A0D06F /* PDPasswordOfTheDay.framework */; settings = {ASSET_TAGS = (); }; };
+		11AC7ABE1BD74E3100A0D06F /* PDPasswordOfTheDayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC7ABD1BD74E3100A0D06F /* PDPasswordOfTheDayTests.m */; };
+		11AC7AC21BD74E3100A0D06F /* PDPasswordOfTheDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AC7AAD1BD74E3100A0D06F /* PDPasswordOfTheDay.framework */; };
+		11AC7AC31BD74E3100A0D06F /* PDPasswordOfTheDay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11AC7AAD1BD74E3100A0D06F /* PDPasswordOfTheDay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		11AC7ACD1BD74E4E00A0D06F /* PDPasswordOfTheDaySI.h in Headers */ = {isa = PBXBuildFile; fileRef = 11AC7ACB1BD74E4E00A0D06F /* PDPasswordOfTheDaySI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11AC7ACE1BD74E4E00A0D06F /* PDPasswordOfTheDaySI.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC7ACC1BD74E4E00A0D06F /* PDPasswordOfTheDaySI.m */; settings = {ASSET_TAGS = (); }; };
 		11C808F01A71B37100CEB635 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11C808F21A71B37100CEB635 /* Localizable.strings */; };
 		DE136D7BDA514C1E4A55593D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4819A6119574283F86E74B3 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -52,6 +58,27 @@
 			remoteGlobalIDString = 11AC7A691BD7470300A0D06F;
 			remoteInfo = "PassDay Widget";
 		};
+		11AC7AB81BD74E3100A0D06F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1174BE051A6F5261009D7DBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11AC7AAC1BD74E3100A0D06F;
+			remoteInfo = PDPasswordOfTheDay;
+		};
+		11AC7ABA1BD74E3100A0D06F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1174BE051A6F5261009D7DBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1174BE0C1A6F5261009D7DBA;
+			remoteInfo = PassDay;
+		};
+		11AC7AC01BD74E3100A0D06F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1174BE051A6F5261009D7DBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11AC7AAC1BD74E3100A0D06F;
+			remoteInfo = PDPasswordOfTheDay;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +91,17 @@
 				11AC7A771BD7470300A0D06F /* PassDay Widget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11AC7AC71BD74E3100A0D06F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11AC7AC31BD74E3100A0D06F /* PDPasswordOfTheDay.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -90,8 +128,6 @@
 		116DD1221A7063C100E7600A /* PDInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDInfoViewController.m; sourceTree = "<group>"; };
 		116DD1281A70685A00E7600A /* PDVolverButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVolverButton.h; sourceTree = "<group>"; };
 		116DD1291A70685A00E7600A /* PDVolverButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVolverButton.m; sourceTree = "<group>"; };
-		11731FA61A702D1F00B89183 /* PDPasswordOfTheDaySI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPasswordOfTheDaySI.h; sourceTree = "<group>"; };
-		11731FA71A702D1F00B89183 /* PDPasswordOfTheDaySI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDPasswordOfTheDaySI.m; sourceTree = "<group>"; };
 		11731FAF1A7048B300B89183 /* PDDatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDDatesViewController.h; sourceTree = "<group>"; };
 		11731FB01A7048B300B89183 /* PDDatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDDatesViewController.m; sourceTree = "<group>"; };
 		11731FB21A7048C200B89183 /* PDConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDConfigurationViewController.h; sourceTree = "<group>"; };
@@ -117,6 +153,14 @@
 		11AC7A6F1BD7470300A0D06F /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		11AC7A721BD7470300A0D06F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		11AC7A741BD7470300A0D06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11AC7AAD1BD74E3100A0D06F /* PDPasswordOfTheDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDPasswordOfTheDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11AC7AAF1BD74E3100A0D06F /* PDPasswordOfTheDay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDPasswordOfTheDay.h; sourceTree = "<group>"; };
+		11AC7AB11BD74E3100A0D06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11AC7AB61BD74E3100A0D06F /* PDPasswordOfTheDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDPasswordOfTheDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11AC7ABD1BD74E3100A0D06F /* PDPasswordOfTheDayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDPasswordOfTheDayTests.m; sourceTree = "<group>"; };
+		11AC7ABF1BD74E3100A0D06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11AC7ACB1BD74E4E00A0D06F /* PDPasswordOfTheDaySI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPasswordOfTheDaySI.h; sourceTree = "<group>"; };
+		11AC7ACC1BD74E4E00A0D06F /* PDPasswordOfTheDaySI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDPasswordOfTheDaySI.m; sourceTree = "<group>"; };
 		11C808F51A71B38E00CEB635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		11C808F61A71B3A400CEB635 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		19547B0DE74A26E3435D94E2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11476AD41A71A7460057E271 /* CoreTelephony.framework in Frameworks */,
+				11AC7AC21BD74E3100A0D06F /* PDPasswordOfTheDay.framework in Frameworks */,
 				11476ACF1A71A51D0057E271 /* MessageUI.framework in Frameworks */,
 				11476ACD1A71A5130057E271 /* Foundation.framework in Frameworks */,
 				DE136D7BDA514C1E4A55593D /* libPods.a in Frameworks */,
@@ -148,6 +193,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				11AC7A6C1BD7470300A0D06F /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11AC7AA91BD74E3100A0D06F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11AC7AB31BD74E3100A0D06F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AC7AB71BD74E3100A0D06F /* PDPasswordOfTheDay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +295,8 @@
 				1174BE0F1A6F5261009D7DBA /* PassDay */,
 				1174BE291A6F5261009D7DBA /* PassDayTests */,
 				11AC7A6D1BD7470300A0D06F /* PassDay Widget */,
+				11AC7AAE1BD74E3100A0D06F /* PDPasswordOfTheDay */,
+				11AC7ABC1BD74E3100A0D06F /* PDPasswordOfTheDayTests */,
 				1174BE0E1A6F5261009D7DBA /* Products */,
 				8B80B3BA17EEB84F8F9521FA /* Pods */,
 				77DBF4F00CACE426EAB95EB6 /* Frameworks */,
@@ -247,6 +309,8 @@
 				1174BE0D1A6F5261009D7DBA /* PassDay.app */,
 				1174BE261A6F5261009D7DBA /* PassDayTests.xctest */,
 				11AC7A6A1BD7470300A0D06F /* PassDay Widget.appex */,
+				11AC7AAD1BD74E3100A0D06F /* PDPasswordOfTheDay.framework */,
+				11AC7AB61BD74E3100A0D06F /* PDPasswordOfTheDayTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,9 +318,7 @@
 		1174BE0F1A6F5261009D7DBA /* PassDay */ = {
 			isa = PBXGroup;
 			children = (
-				11AC7A651BD7468600A0D06F /* Extensions */,
 				1174BE371A6F54BD009D7DBA /* Resources */,
-				1174BE391A6F54CC009D7DBA /* Algorithm */,
 				116DD1241A70676500E7600A /* Extras */,
 				1174BE381A6F54C6009D7DBA /* Views */,
 				1174BE101A6F5261009D7DBA /* Supporting Files */,
@@ -316,22 +378,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		1174BE391A6F54CC009D7DBA /* Algorithm */ = {
-			isa = PBXGroup;
-			children = (
-				11731FA61A702D1F00B89183 /* PDPasswordOfTheDaySI.h */,
-				11731FA71A702D1F00B89183 /* PDPasswordOfTheDaySI.m */,
-			);
-			path = Algorithm;
-			sourceTree = "<group>";
-		};
-		11AC7A651BD7468600A0D06F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		11AC7A6D1BD7470300A0D06F /* PassDay Widget */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +387,26 @@
 				11AC7A741BD7470300A0D06F /* Info.plist */,
 			);
 			path = "PassDay Widget";
+			sourceTree = "<group>";
+		};
+		11AC7AAE1BD74E3100A0D06F /* PDPasswordOfTheDay */ = {
+			isa = PBXGroup;
+			children = (
+				11AC7AAF1BD74E3100A0D06F /* PDPasswordOfTheDay.h */,
+				11AC7ACB1BD74E4E00A0D06F /* PDPasswordOfTheDaySI.h */,
+				11AC7ACC1BD74E4E00A0D06F /* PDPasswordOfTheDaySI.m */,
+				11AC7AB11BD74E3100A0D06F /* Info.plist */,
+			);
+			path = PDPasswordOfTheDay;
+			sourceTree = "<group>";
+		};
+		11AC7ABC1BD74E3100A0D06F /* PDPasswordOfTheDayTests */ = {
+			isa = PBXGroup;
+			children = (
+				11AC7ABD1BD74E3100A0D06F /* PDPasswordOfTheDayTests.m */,
+				11AC7ABF1BD74E3100A0D06F /* Info.plist */,
+			);
+			path = PDPasswordOfTheDayTests;
 			sourceTree = "<group>";
 		};
 		77DBF4F00CACE426EAB95EB6 /* Frameworks */ = {
@@ -366,6 +432,18 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		11AC7AAA1BD74E3100A0D06F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AC7AB01BD74E3100A0D06F /* PDPasswordOfTheDay.h in Headers */,
+				11AC7ACD1BD74E4E00A0D06F /* PDPasswordOfTheDaySI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		1174BE0C1A6F5261009D7DBA /* PassDay */ = {
 			isa = PBXNativeTarget;
@@ -380,11 +458,13 @@
 				BDCB1267ADF4CD184BEB2EB4 /* Embed Pods Frameworks */,
 				11AC7A641BD7435400A0D06F /* ShellScript */,
 				11AC7A7B1BD7470300A0D06F /* Embed App Extensions */,
+				11AC7AC71BD74E3100A0D06F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				11AC7A761BD7470300A0D06F /* PBXTargetDependency */,
+				11AC7AC11BD74E3100A0D06F /* PBXTargetDependency */,
 			);
 			name = PassDay;
 			productName = PassDay;
@@ -416,6 +496,7 @@
 				11AC7A661BD7470300A0D06F /* Sources */,
 				11AC7A671BD7470300A0D06F /* Frameworks */,
 				11AC7A681BD7470300A0D06F /* Resources */,
+				11AC7A7C1BD747A300A0D06F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -425,6 +506,43 @@
 			productName = "PassDay Widget";
 			productReference = 11AC7A6A1BD7470300A0D06F /* PassDay Widget.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		11AC7AAC1BD74E3100A0D06F /* PDPasswordOfTheDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11AC7AC41BD74E3100A0D06F /* Build configuration list for PBXNativeTarget "PDPasswordOfTheDay" */;
+			buildPhases = (
+				11AC7AA81BD74E3100A0D06F /* Sources */,
+				11AC7AA91BD74E3100A0D06F /* Frameworks */,
+				11AC7AAA1BD74E3100A0D06F /* Headers */,
+				11AC7AAB1BD74E3100A0D06F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDPasswordOfTheDay;
+			productName = PDPasswordOfTheDay;
+			productReference = 11AC7AAD1BD74E3100A0D06F /* PDPasswordOfTheDay.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		11AC7AB51BD74E3100A0D06F /* PDPasswordOfTheDayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11AC7AC81BD74E3100A0D06F /* Build configuration list for PBXNativeTarget "PDPasswordOfTheDayTests" */;
+			buildPhases = (
+				11AC7AB21BD74E3100A0D06F /* Sources */,
+				11AC7AB31BD74E3100A0D06F /* Frameworks */,
+				11AC7AB41BD74E3100A0D06F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11AC7AB91BD74E3100A0D06F /* PBXTargetDependency */,
+				11AC7ABB1BD74E3100A0D06F /* PBXTargetDependency */,
+			);
+			name = PDPasswordOfTheDayTests;
+			productName = PDPasswordOfTheDayTests;
+			productReference = 11AC7AB61BD74E3100A0D06F /* PDPasswordOfTheDayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -448,6 +566,14 @@
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = AU3J78BE58;
 					};
+					11AC7AAC1BD74E3100A0D06F = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = AU3J78BE58;
+					};
+					11AC7AB51BD74E3100A0D06F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 1174BE0C1A6F5261009D7DBA;
+					};
 				};
 			};
 			buildConfigurationList = 1174BE081A6F5261009D7DBA /* Build configuration list for PBXProject "PassDay" */;
@@ -467,6 +593,8 @@
 				1174BE0C1A6F5261009D7DBA /* PassDay */,
 				1174BE251A6F5261009D7DBA /* PassDayTests */,
 				11AC7A691BD7470300A0D06F /* PassDay Widget */,
+				11AC7AAC1BD74E3100A0D06F /* PDPasswordOfTheDay */,
+				11AC7AB51BD74E3100A0D06F /* PDPasswordOfTheDayTests */,
 			);
 		};
 /* End PBXProject section */
@@ -499,6 +627,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11AC7AAB1BD74E3100A0D06F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11AC7AB41BD74E3100A0D06F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -527,6 +669,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" 4b11d00fe22598ba9a20b9a29fffd60b99cd215f 366ca3c9ee37998355bac818317ea77ec5f8be329d1119a241af705b1eae9bff";
+		};
+		11AC7A7C1BD747A300A0D06F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Auto Increment Version Number Script\nbuildPlist=$INFOPLIST_FILE\n#echo $buildPlist\nCFSVString=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$buildPlist\")\nCFBundleVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\")\nBUILD_NR=${CFBundleVersion##*.}\n    BUILD_NR=$(($BUILD_NR + 1))\n    #echo $BUILD_NR\n    CFBundleVersion=$CFSVString\".0.\"$BUILD_NR\n    #echo $CFBundleVersion\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $CFBundleVersion\" \"$buildPlist\"\n#echo \"Finish\"";
 		};
 		78831E5775D5485465726912 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -592,7 +747,6 @@
 				1174BE131A6F5261009D7DBA /* main.m in Sources */,
 				113D8A571A70B13100A6484C /* PDCarouselDateCell.m in Sources */,
 				11731FB41A7048C200B89183 /* PDConfigurationViewController.m in Sources */,
-				11731FA81A702D1F00B89183 /* PDPasswordOfTheDaySI.m in Sources */,
 				113D8A531A70AD6C00A6484C /* PDCarousel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,6 +767,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11AC7AA81BD74E3100A0D06F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AC7ACE1BD74E4E00A0D06F /* PDPasswordOfTheDaySI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11AC7AB21BD74E3100A0D06F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AC7ABE1BD74E3100A0D06F /* PDPasswordOfTheDayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -625,6 +795,21 @@
 			isa = PBXTargetDependency;
 			target = 11AC7A691BD7470300A0D06F /* PassDay Widget */;
 			targetProxy = 11AC7A751BD7470300A0D06F /* PBXContainerItemProxy */;
+		};
+		11AC7AB91BD74E3100A0D06F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11AC7AAC1BD74E3100A0D06F /* PDPasswordOfTheDay */;
+			targetProxy = 11AC7AB81BD74E3100A0D06F /* PBXContainerItemProxy */;
+		};
+		11AC7ABB1BD74E3100A0D06F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1174BE0C1A6F5261009D7DBA /* PassDay */;
+			targetProxy = 11AC7ABA1BD74E3100A0D06F /* PBXContainerItemProxy */;
+		};
+		11AC7AC11BD74E3100A0D06F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11AC7AAC1BD74E3100A0D06F /* PDPasswordOfTheDay */;
+			targetProxy = 11AC7AC01BD74E3100A0D06F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -702,7 +887,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -739,7 +924,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -827,7 +1012,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "PassDay Widget/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.proatomicdev.PassDay.PassDay-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -844,11 +1029,89 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "PassDay Widget/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.proatomicdev.PassDay.PassDay-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		11AC7AC51BD74E3100A0D06F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = PDPasswordOfTheDay/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.proatomicdev.PDPasswordOfTheDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		11AC7AC61BD74E3100A0D06F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = PDPasswordOfTheDay/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.proatomicdev.PDPasswordOfTheDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		11AC7AC91BD74E3100A0D06F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = PDPasswordOfTheDayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.proatomicdev.PDPasswordOfTheDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassDay.app/PassDay";
+			};
+			name = Debug;
+		};
+		11AC7ACA1BD74E3100A0D06F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = PDPasswordOfTheDayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.proatomicdev.PDPasswordOfTheDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassDay.app/PassDay";
 			};
 			name = Release;
 		};
@@ -887,6 +1150,22 @@
 			buildConfigurations = (
 				11AC7A791BD7470300A0D06F /* Debug */,
 				11AC7A7A1BD7470300A0D06F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		11AC7AC41BD74E3100A0D06F /* Build configuration list for PBXNativeTarget "PDPasswordOfTheDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11AC7AC51BD74E3100A0D06F /* Debug */,
+				11AC7AC61BD74E3100A0D06F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		11AC7AC81BD74E3100A0D06F /* Build configuration list for PBXNativeTarget "PDPasswordOfTheDayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11AC7AC91BD74E3100A0D06F /* Debug */,
+				11AC7ACA1BD74E3100A0D06F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
