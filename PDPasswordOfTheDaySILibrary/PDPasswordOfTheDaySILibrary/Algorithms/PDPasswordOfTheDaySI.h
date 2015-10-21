@@ -27,12 +27,6 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for PDPasswordOfTheDaySI.
-FOUNDATION_EXPORT double PDPasswordOfTheDaySIVersionNumber;
-
-//! Project version string for PDPasswordOfTheDaySI.
-FOUNDATION_EXPORT const unsigned char PDPasswordOfTheDaySIVersionString[];
-
 typedef enum : NSUInteger {
     PDAlgorithmFailureOutOfBounds,
     PDAlgorithmFailureNegativeRestDates,

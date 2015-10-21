@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Key"; ObjectID = "SHz-gj-B9x"; */
+"SHz-gj-B9x.text" = "Key";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "giZ-eg-2Ng"; */
+"giZ-eg-2Ng.text" = "Date";
+
+/* Class = "UIButton"; normalTitle = "Copy"; ObjectID = "v6T-Tl-NBc"; */
+"v6T-Tl-NBc.normalTitle" = "Copiar";
