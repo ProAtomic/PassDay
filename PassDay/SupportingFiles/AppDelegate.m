@@ -8,15 +8,27 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+#import <Flurry.h>
 
-@end
+void uncaughtExceptionHandler(NSException *exception) {
+    [Flurry logError:@"Uncaught" message:@"Crash" exception:exception];
+}
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // Crashlytics
+    [Fabric with:@[[Crashlytics class]]];
+    
+    // Analitycs
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    [Flurry startSession:@"SFQWBYH5GQD9QJKMDRV2"];
+    [Flurry setCrashReportingEnabled:YES];
+    
     return YES;
 }
 

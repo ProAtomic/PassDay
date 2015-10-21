@@ -1,8 +1,12 @@
-platform :ios, '7.0'
+platform :ios, '7.1'
 
 pod 'iRate'
+pod 'iVersion'
+pod 'Fabric'
+pod 'Crashlytics'
+pod 'Flurry-iOS-SDK/FlurrySDK'
 pod 'iCarousel'
 pod 'pop'
-pod 'TPKeyboardAvoiding', :head
+pod 'TPKeyboardAvoiding'
 pod 'JGProgressHUD'
 pod 'UIDevice-Hardware'

@@ -8,6 +8,7 @@
 
 #import "PDInfoViewController.h"
 
+#import <Flurry.h>
 #import <MessageUI/MessageUI.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <UIDevice-Hardware.h>
@@ -26,7 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [Flurry logEvent:NSStringFromClass(self.class)];
     
     [self.textView setText:NSLocalizedString(@"InfoText", nil)];
 }

@@ -8,6 +8,8 @@
 
 #import "PDConfigurationViewController.h"
 
+#import <Flurry.h>
+
 #define Debug 0
 
 @interface PDConfigurationViewController ()
@@ -22,6 +24,7 @@
     ReallyDebug
     [super viewDidLoad];
     
+    [Flurry logEvent:NSStringFromClass(self.class)];
     [self.lblSeed setText:[[PDPasswordOfTheDaySI sharedInstance] seed]];
 }
 

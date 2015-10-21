@@ -8,6 +8,8 @@
 
 #import "PDPasswordsViewController.h"
 
+#import <Flurry.h>
+
 #import "PDCarousel.h"
 #import "PDProgressHUD.h"
 
@@ -24,6 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [Flurry logEvent:NSStringFromClass(self.class)];
     
     // Do any additional setup after loading the view.
     [[PDPasswordOfTheDaySI sharedInstance] generatePasswordFromStartDay:self.startDate toEndDay:self.endDate withCompletion:^(NSArray *passwordsArray) {

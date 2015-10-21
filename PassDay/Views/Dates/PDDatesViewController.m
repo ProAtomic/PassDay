@@ -11,6 +11,8 @@
 #import "PDPasswordsViewController.h"
 #import "PDProgressHUD.h"
 
+#import <Flurry.h>
+
 #define Debug 0
 
 @interface PDDatesViewController ()
@@ -24,7 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [Flurry logEvent:NSStringFromClass(self.class)];
 }
 
 - (void)didReceiveMemoryWarning {

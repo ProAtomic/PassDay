@@ -29,6 +29,10 @@
 		1174BE411A6F5677009D7DBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE3D1A6F5677009D7DBA /* LaunchScreen.xib */; };
 		1174BE421A6F5677009D7DBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE3F1A6F5677009D7DBA /* Main.storyboard */; };
 		1174BE441A6F5699009D7DBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE431A6F5699009D7DBA /* Images.xcassets */; };
+		11AC7A6C1BD7470300A0D06F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AC7A6B1BD7470300A0D06F /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
+		11AC7A701BD7470300A0D06F /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC7A6F1BD7470300A0D06F /* TodayViewController.m */; };
+		11AC7A731BD7470300A0D06F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AC7A711BD7470300A0D06F /* MainInterface.storyboard */; };
+		11AC7A771BD7470300A0D06F /* PassDay Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 11AC7A6A1BD7470300A0D06F /* PassDay Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		11C808F01A71B37100CEB635 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11C808F21A71B37100CEB635 /* Localizable.strings */; };
 		DE136D7BDA514C1E4A55593D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4819A6119574283F86E74B3 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -41,7 +45,28 @@
 			remoteGlobalIDString = 1174BE0C1A6F5261009D7DBA;
 			remoteInfo = PassDay;
 		};
+		11AC7A751BD7470300A0D06F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1174BE051A6F5261009D7DBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11AC7A691BD7470300A0D06F;
+			remoteInfo = "PassDay Widget";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11AC7A7B1BD7470300A0D06F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				11AC7A771BD7470300A0D06F /* PassDay Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		113A3FFE1A706AD700423DFC /* UIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Hierarchy.h"; sourceTree = "<group>"; };
@@ -86,6 +111,12 @@
 		1174BE431A6F5699009D7DBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		11A7C19A1A6F62BB00B60BEB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		11A7C1A01A6F649400B60BEB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		11AC7A6A1BD7470300A0D06F /* PassDay Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PassDay Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11AC7A6B1BD7470300A0D06F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		11AC7A6E1BD7470300A0D06F /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		11AC7A6F1BD7470300A0D06F /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		11AC7A721BD7470300A0D06F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		11AC7A741BD7470300A0D06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11C808F51A71B38E00CEB635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		11C808F61A71B3A400CEB635 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		19547B0DE74A26E3435D94E2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +140,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11AC7A671BD7470300A0D06F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AC7A6C1BD7470300A0D06F /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +234,7 @@
 				11A7C19A1A6F62BB00B60BEB /* README.md */,
 				1174BE0F1A6F5261009D7DBA /* PassDay */,
 				1174BE291A6F5261009D7DBA /* PassDayTests */,
+				11AC7A6D1BD7470300A0D06F /* PassDay Widget */,
 				1174BE0E1A6F5261009D7DBA /* Products */,
 				8B80B3BA17EEB84F8F9521FA /* Pods */,
 				77DBF4F00CACE426EAB95EB6 /* Frameworks */,
@@ -206,6 +246,7 @@
 			children = (
 				1174BE0D1A6F5261009D7DBA /* PassDay.app */,
 				1174BE261A6F5261009D7DBA /* PassDayTests.xctest */,
+				11AC7A6A1BD7470300A0D06F /* PassDay Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,6 +254,7 @@
 		1174BE0F1A6F5261009D7DBA /* PassDay */ = {
 			isa = PBXGroup;
 			children = (
+				11AC7A651BD7468600A0D06F /* Extensions */,
 				1174BE371A6F54BD009D7DBA /* Resources */,
 				1174BE391A6F54CC009D7DBA /* Algorithm */,
 				116DD1241A70676500E7600A /* Extras */,
@@ -283,6 +325,24 @@
 			path = Algorithm;
 			sourceTree = "<group>";
 		};
+		11AC7A651BD7468600A0D06F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		11AC7A6D1BD7470300A0D06F /* PassDay Widget */ = {
+			isa = PBXGroup;
+			children = (
+				11AC7A6E1BD7470300A0D06F /* TodayViewController.h */,
+				11AC7A6F1BD7470300A0D06F /* TodayViewController.m */,
+				11AC7A711BD7470300A0D06F /* MainInterface.storyboard */,
+				11AC7A741BD7470300A0D06F /* Info.plist */,
+			);
+			path = "PassDay Widget";
+			sourceTree = "<group>";
+		};
 		77DBF4F00CACE426EAB95EB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +350,7 @@
 				11476ACE1A71A51D0057E271 /* MessageUI.framework */,
 				11476ACC1A71A5130057E271 /* Foundation.framework */,
 				F4819A6119574283F86E74B3 /* libPods.a */,
+				11AC7A6B1BD7470300A0D06F /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -316,10 +377,14 @@
 				1174BE0B1A6F5261009D7DBA /* Resources */,
 				1174BE361A6F52B0009D7DBA /* ShellScript */,
 				78831E5775D5485465726912 /* Copy Pods Resources */,
+				BDCB1267ADF4CD184BEB2EB4 /* Embed Pods Frameworks */,
+				11AC7A641BD7435400A0D06F /* ShellScript */,
+				11AC7A7B1BD7470300A0D06F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				11AC7A761BD7470300A0D06F /* PBXTargetDependency */,
 			);
 			name = PassDay;
 			productName = PassDay;
@@ -344,6 +409,23 @@
 			productReference = 1174BE261A6F5261009D7DBA /* PassDayTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		11AC7A691BD7470300A0D06F /* PassDay Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11AC7A781BD7470300A0D06F /* Build configuration list for PBXNativeTarget "PassDay Widget" */;
+			buildPhases = (
+				11AC7A661BD7470300A0D06F /* Sources */,
+				11AC7A671BD7470300A0D06F /* Frameworks */,
+				11AC7A681BD7470300A0D06F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PassDay Widget";
+			productName = "PassDay Widget";
+			productReference = 11AC7A6A1BD7470300A0D06F /* PassDay Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -351,7 +433,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PD;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Property Atomic Strong SAC";
 				TargetAttributes = {
 					1174BE0C1A6F5261009D7DBA = {
@@ -361,6 +443,10 @@
 					1174BE251A6F5261009D7DBA = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = 1174BE0C1A6F5261009D7DBA;
+					};
+					11AC7A691BD7470300A0D06F = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = AU3J78BE58;
 					};
 				};
 			};
@@ -380,6 +466,7 @@
 			targets = (
 				1174BE0C1A6F5261009D7DBA /* PassDay */,
 				1174BE251A6F5261009D7DBA /* PassDayTests */,
+				11AC7A691BD7470300A0D06F /* PassDay Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -404,6 +491,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11AC7A681BD7470300A0D06F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AC7A731BD7470300A0D06F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -419,6 +514,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Auto Increment Version Number Script\nbuildPlist=$INFOPLIST_FILE\n#echo $buildPlist\nCFSVString=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$buildPlist\")\nCFBundleVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\")\nBUILD_NR=${CFBundleVersion##*.}\n    BUILD_NR=$(($BUILD_NR + 1))\n    #echo $BUILD_NR\n    CFBundleVersion=$CFSVString\".0.\"$BUILD_NR\n    #echo $CFBundleVersion\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $CFBundleVersion\" \"$buildPlist\"\n#echo \"Finish\"";
+		};
+		11AC7A641BD7435400A0D06F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" 4b11d00fe22598ba9a20b9a29fffd60b99cd215f 366ca3c9ee37998355bac818317ea77ec5f8be329d1119a241af705b1eae9bff";
 		};
 		78831E5775D5485465726912 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -448,6 +556,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BDCB1267ADF4CD184BEB2EB4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -482,6 +605,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11AC7A661BD7470300A0D06F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AC7A701BD7470300A0D06F /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -489,6 +620,11 @@
 			isa = PBXTargetDependency;
 			target = 1174BE0C1A6F5261009D7DBA /* PassDay */;
 			targetProxy = 1174BE271A6F5261009D7DBA /* PBXContainerItemProxy */;
+		};
+		11AC7A761BD7470300A0D06F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11AC7A691BD7470300A0D06F /* PassDay Widget */;
+			targetProxy = 11AC7A751BD7470300A0D06F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -508,6 +644,14 @@
 				11476AD51A71AE800057E271 /* es */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11AC7A711BD7470300A0D06F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11AC7A721BD7470300A0D06F /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 		11C808F21A71B37100CEB635 /* Localizable.strings */ = {
@@ -543,6 +687,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -613,6 +758,7 @@
 				GCC_PREFIX_HEADER = PassDay/SupportingFiles/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/PassDay/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.proatomicdev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -625,11 +771,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PREFIX_HEADER = PassDay/SupportingFiles/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/PassDay/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.proatomicdev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -650,6 +797,7 @@
 				);
 				INFOPLIST_FILE = PassDayTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.proatomicdev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassDay.app/PassDay";
 			};
@@ -665,8 +813,42 @@
 				);
 				INFOPLIST_FILE = PassDayTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.proatomicdev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassDay.app/PassDay";
+			};
+			name = Release;
+		};
+		11AC7A791BD7470300A0D06F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "PassDay Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.proatomicdev.PassDay.PassDay-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		11AC7A7A1BD7470300A0D06F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "PassDay Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.proatomicdev.PassDay.PassDay-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -699,6 +881,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		11AC7A781BD7470300A0D06F /* Build configuration list for PBXNativeTarget "PassDay Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11AC7A791BD7470300A0D06F /* Debug */,
+				11AC7A7A1BD7470300A0D06F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
