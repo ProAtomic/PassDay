@@ -13,6 +13,19 @@
 		113D8A591A70B13F00A6484C /* PDCarouselDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113D8A581A70B13F00A6484C /* PDCarouselDateCell.xib */; };
 		113D8A5C1A70B28D00A6484C /* UIView+NibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D8A5B1A70B28D00A6484C /* UIView+NibLoading.m */; };
 		113D8A611A70C6C300A6484C /* PDProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D8A601A70C6C300A6484C /* PDProgressHUD.m */; };
+		113E15371C7ABF760042D7D3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113E15351C7ABF760042D7D3 /* Interface.storyboard */; };
+		113E15391C7ABF760042D7D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113E15381C7ABF760042D7D3 /* Assets.xcassets */; };
+		113E15401C7ABF760042D7D3 /* PassDayWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 113E153F1C7ABF760042D7D3 /* PassDayWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		113E154B1C7ABF760042D7D3 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 113E154A1C7ABF760042D7D3 /* ExtensionDelegate.m */; };
+		113E15501C7ABF760042D7D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113E154F1C7ABF760042D7D3 /* Assets.xcassets */; };
+		113E15541C7ABF760042D7D3 /* PassDayWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 113E15331C7ABF760042D7D3 /* PassDayWatch.app */; };
+		113E156A1C7AC03E0042D7D3 /* PDDatesInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113E15691C7AC03E0042D7D3 /* PDDatesInterfaceController.m */; };
+		113E15711C7AC1740042D7D3 /* PDDateRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113E15701C7AC1740042D7D3 /* PDDateRowController.m */; };
+		113E157A1C7AC7DF0042D7D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 113E157C1C7AC7DF0042D7D3 /* Localizable.strings */; };
+		113E15811C7AC8D90042D7D3 /* PDPasswordInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113E15801C7AC8D90042D7D3 /* PDPasswordInterfaceController.m */; };
+		113E15851C7ACEC40042D7D3 /* PDPasswordOfTheDaySI.m in Sources */ = {isa = PBXBuildFile; fileRef = 113E15841C7ACEC40042D7D3 /* PDPasswordOfTheDaySI.m */; };
+		113E15861C7ACEC40042D7D3 /* PDPasswordOfTheDaySI.m in Sources */ = {isa = PBXBuildFile; fileRef = 113E15841C7ACEC40042D7D3 /* PDPasswordOfTheDaySI.m */; };
+		113E15871C7ACEC40042D7D3 /* PDPasswordOfTheDaySI.m in Sources */ = {isa = PBXBuildFile; fileRef = 113E15841C7ACEC40042D7D3 /* PDPasswordOfTheDaySI.m */; };
 		11476ACD1A71A5130057E271 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11476ACC1A71A5130057E271 /* Foundation.framework */; };
 		11476ACF1A71A51D0057E271 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11476ACE1A71A51D0057E271 /* MessageUI.framework */; };
 		11476AD21A71A7220057E271 /* UIApplication+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 11476AD11A71A7220057E271 /* UIApplication+Extras.m */; };
@@ -28,18 +41,30 @@
 		1174BE411A6F5677009D7DBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE3D1A6F5677009D7DBA /* LaunchScreen.xib */; };
 		1174BE421A6F5677009D7DBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE3F1A6F5677009D7DBA /* Main.storyboard */; };
 		1174BE441A6F5699009D7DBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE431A6F5699009D7DBA /* Images.xcassets */; };
-		11AC7A6C1BD7470300A0D06F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AC7A6B1BD7470300A0D06F /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
+		11AC7A6C1BD7470300A0D06F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AC7A6B1BD7470300A0D06F /* NotificationCenter.framework */; };
 		11AC7A731BD7470300A0D06F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AC7A711BD7470300A0D06F /* MainInterface.storyboard */; };
 		11AC7A771BD7470300A0D06F /* PassDay Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 11AC7A6A1BD7470300A0D06F /* PassDay Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		11AC7AD51BD7537900A0D06F /* PDPassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC7AD41BD7537900A0D06F /* PDPassViewController.m */; settings = {ASSET_TAGS = (); }; };
-		11AC7B071BD7602900A0D06F /* PDPasswordOfTheDaySILibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AC7B061BD7602900A0D06F /* PDPasswordOfTheDaySILibrary.framework */; settings = {ASSET_TAGS = (); }; };
-		11AC7B081BD7602900A0D06F /* PDPasswordOfTheDaySILibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AC7B061BD7602900A0D06F /* PDPasswordOfTheDaySILibrary.framework */; settings = {ASSET_TAGS = (); }; };
-		11AC7B101BD7616100A0D06F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE431A6F5699009D7DBA /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		11AC7AD51BD7537900A0D06F /* PDPassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC7AD41BD7537900A0D06F /* PDPassViewController.m */; };
+		11AC7B101BD7616100A0D06F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1174BE431A6F5699009D7DBA /* Images.xcassets */; };
 		11C808F01A71B37100CEB635 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11C808F21A71B37100CEB635 /* Localizable.strings */; };
 		DE136D7BDA514C1E4A55593D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4819A6119574283F86E74B3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		113E15411C7ABF760042D7D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1174BE051A6F5261009D7DBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 113E153E1C7ABF760042D7D3;
+			remoteInfo = "PassDayWatch Extension";
+		};
+		113E15521C7ABF760042D7D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1174BE051A6F5261009D7DBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 113E15321C7ABF760042D7D3;
+			remoteInfo = PassDayWatch;
+		};
 		1174BE271A6F5261009D7DBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1174BE051A6F5261009D7DBA /* Project object */;
@@ -54,16 +79,41 @@
 			remoteGlobalIDString = 11AC7A691BD7470300A0D06F;
 			remoteInfo = "PassDay Widget";
 		};
-		11AC7B0E1BD7604100A0D06F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11AC7B091BD7604100A0D06F /* PDPasswordOfTheDaySILibrary.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 11AC7AE21BD7560900A0D06F;
-			remoteInfo = PDPasswordOfTheDaySILibrary;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		112B4F3E1C7A8D2500AACDA6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				113E15541C7ABF760042D7D3 /* PassDayWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113E155A1C7ABF760042D7D3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				113E15401C7ABF760042D7D3 /* PassDayWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113E15651C7ABFD80042D7D3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11AC7A7B1BD7470300A0D06F /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,6 +138,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		112B4F171C7A8C4A00AACDA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		113A3FFE1A706AD700423DFC /* UIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Hierarchy.h"; sourceTree = "<group>"; };
 		113A3FFF1A706AD700423DFC /* UIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Hierarchy.m"; sourceTree = "<group>"; };
 		113D8A511A70AD6C00A6484C /* PDCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCarousel.h; sourceTree = "<group>"; };
@@ -99,6 +150,25 @@
 		113D8A5B1A70B28D00A6484C /* UIView+NibLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NibLoading.m"; sourceTree = "<group>"; };
 		113D8A5F1A70C6C300A6484C /* PDProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDProgressHUD.h; sourceTree = "<group>"; };
 		113D8A601A70C6C300A6484C /* PDProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDProgressHUD.m; sourceTree = "<group>"; };
+		113E15331C7ABF760042D7D3 /* PassDayWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassDayWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		113E15361C7ABF760042D7D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		113E15381C7ABF760042D7D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		113E153A1C7ABF760042D7D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		113E153F1C7ABF760042D7D3 /* PassDayWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PassDayWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		113E15491C7ABF760042D7D3 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		113E154A1C7ABF760042D7D3 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		113E154F1C7ABF760042D7D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		113E15511C7ABF760042D7D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		113E15681C7AC03E0042D7D3 /* PDDatesInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDDatesInterfaceController.h; sourceTree = "<group>"; };
+		113E15691C7AC03E0042D7D3 /* PDDatesInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDDatesInterfaceController.m; sourceTree = "<group>"; };
+		113E156F1C7AC1740042D7D3 /* PDDateRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDDateRowController.h; sourceTree = "<group>"; };
+		113E15701C7AC1740042D7D3 /* PDDateRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDDateRowController.m; sourceTree = "<group>"; };
+		113E157B1C7AC7DF0042D7D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		113E157D1C7AC7E00042D7D3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		113E157F1C7AC8D90042D7D3 /* PDPasswordInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPasswordInterfaceController.h; sourceTree = "<group>"; };
+		113E15801C7AC8D90042D7D3 /* PDPasswordInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDPasswordInterfaceController.m; sourceTree = "<group>"; };
+		113E15831C7ACEC40042D7D3 /* PDPasswordOfTheDaySI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPasswordOfTheDaySI.h; sourceTree = "<group>"; };
+		113E15841C7ACEC40042D7D3 /* PDPasswordOfTheDaySI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDPasswordOfTheDaySI.m; sourceTree = "<group>"; };
 		11476ACC1A71A5130057E271 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11476ACE1A71A51D0057E271 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		11476AD01A71A7220057E271 /* UIApplication+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Extras.h"; sourceTree = "<group>"; };
@@ -134,8 +204,6 @@
 		11AC7A741BD7470300A0D06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11AC7AD31BD7537900A0D06F /* PDPassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPassViewController.h; sourceTree = "<group>"; };
 		11AC7AD41BD7537900A0D06F /* PDPassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDPassViewController.m; sourceTree = "<group>"; };
-		11AC7B061BD7602900A0D06F /* PDPasswordOfTheDaySILibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PDPasswordOfTheDaySILibrary.framework; sourceTree = "<group>"; };
-		11AC7B091BD7604100A0D06F /* PDPasswordOfTheDaySILibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PDPasswordOfTheDaySILibrary.xcodeproj; path = PDPasswordOfTheDaySILibrary/PDPasswordOfTheDaySILibrary.xcodeproj; sourceTree = "<group>"; };
 		11AC7B121BD768CA00A0D06F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainInterface.strings; sourceTree = "<group>"; };
 		11C808F51A71B38E00CEB635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		11C808F61A71B3A400CEB635 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -145,6 +213,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		113E153C1C7ABF760042D7D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1174BE0A1A6F5261009D7DBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,7 +228,6 @@
 				11476ACF1A71A51D0057E271 /* MessageUI.framework in Frameworks */,
 				11476ACD1A71A5130057E271 /* Foundation.framework in Frameworks */,
 				DE136D7BDA514C1E4A55593D /* libPods.a in Frameworks */,
-				11AC7B071BD7602900A0D06F /* PDPasswordOfTheDaySILibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +243,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				11AC7A6C1BD7470300A0D06F /* NotificationCenter.framework in Frameworks */,
-				11AC7B081BD7602900A0D06F /* PDPasswordOfTheDaySILibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +270,83 @@
 				113D8A581A70B13F00A6484C /* PDCarouselDateCell.xib */,
 			);
 			path = Extras;
+			sourceTree = "<group>";
+		};
+		113E15341C7ABF760042D7D3 /* PassDayWatch */ = {
+			isa = PBXGroup;
+			children = (
+				113E15351C7ABF760042D7D3 /* Interface.storyboard */,
+				113E15381C7ABF760042D7D3 /* Assets.xcassets */,
+				113E153A1C7ABF760042D7D3 /* Info.plist */,
+			);
+			path = PassDayWatch;
+			sourceTree = "<group>";
+		};
+		113E15431C7ABF760042D7D3 /* PassDayWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				113E15661C7AC0130042D7D3 /* Views */,
+				113E15491C7ABF760042D7D3 /* ExtensionDelegate.h */,
+				113E154A1C7ABF760042D7D3 /* ExtensionDelegate.m */,
+				113E154F1C7ABF760042D7D3 /* Assets.xcassets */,
+				113E15511C7ABF760042D7D3 /* Info.plist */,
+				113E15441C7ABF760042D7D3 /* Supporting Files */,
+			);
+			path = "PassDayWatch Extension";
+			sourceTree = "<group>";
+		};
+		113E15441C7ABF760042D7D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				113E157C1C7AC7DF0042D7D3 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		113E15661C7AC0130042D7D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				113E15671C7AC01E0042D7D3 /* DatesInterface */,
+				113E157E1C7AC8B30042D7D3 /* PasswordInterface */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		113E15671C7AC01E0042D7D3 /* DatesInterface */ = {
+			isa = PBXGroup;
+			children = (
+				113E156B1C7AC0410042D7D3 /* Extras */,
+				113E15681C7AC03E0042D7D3 /* PDDatesInterfaceController.h */,
+				113E15691C7AC03E0042D7D3 /* PDDatesInterfaceController.m */,
+			);
+			path = DatesInterface;
+			sourceTree = "<group>";
+		};
+		113E156B1C7AC0410042D7D3 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				113E156F1C7AC1740042D7D3 /* PDDateRowController.h */,
+				113E15701C7AC1740042D7D3 /* PDDateRowController.m */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		113E157E1C7AC8B30042D7D3 /* PasswordInterface */ = {
+			isa = PBXGroup;
+			children = (
+				113E157F1C7AC8D90042D7D3 /* PDPasswordInterfaceController.h */,
+				113E15801C7AC8D90042D7D3 /* PDPasswordInterfaceController.m */,
+			);
+			path = PasswordInterface;
+			sourceTree = "<group>";
+		};
+		113E15821C7ACEC40042D7D3 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				113E15831C7ACEC40042D7D3 /* PDPasswordOfTheDaySI.h */,
+				113E15841C7ACEC40042D7D3 /* PDPasswordOfTheDaySI.m */,
+			);
+			path = Algorithms;
 			sourceTree = "<group>";
 		};
 		116DD1201A7063A800E7600A /* Info */ = {
@@ -254,10 +404,12 @@
 			isa = PBXGroup;
 			children = (
 				11A7C19A1A6F62BB00B60BEB /* README.md */,
-				11AC7B091BD7604100A0D06F /* PDPasswordOfTheDaySILibrary.xcodeproj */,
+				113E15821C7ACEC40042D7D3 /* Algorithms */,
 				1174BE0F1A6F5261009D7DBA /* PassDay */,
 				1174BE291A6F5261009D7DBA /* PassDayTests */,
 				11AC7A6D1BD7470300A0D06F /* PassDay Widget */,
+				113E15341C7ABF760042D7D3 /* PassDayWatch */,
+				113E15431C7ABF760042D7D3 /* PassDayWatch Extension */,
 				1174BE0E1A6F5261009D7DBA /* Products */,
 				8B80B3BA17EEB84F8F9521FA /* Pods */,
 				77DBF4F00CACE426EAB95EB6 /* Frameworks */,
@@ -270,6 +422,8 @@
 				1174BE0D1A6F5261009D7DBA /* PassDay.app */,
 				1174BE261A6F5261009D7DBA /* PassDayTests.xctest */,
 				11AC7A6A1BD7470300A0D06F /* PassDay Widget.appex */,
+				113E15331C7ABF760042D7D3 /* PassDayWatch.app */,
+				113E153F1C7ABF760042D7D3 /* PassDayWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -348,18 +502,9 @@
 			path = "PassDay Widget";
 			sourceTree = "<group>";
 		};
-		11AC7B0A1BD7604100A0D06F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				11AC7B0F1BD7604100A0D06F /* libPDPasswordOfTheDaySILibrary.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		77DBF4F00CACE426EAB95EB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				11AC7B061BD7602900A0D06F /* PDPasswordOfTheDaySILibrary.framework */,
 				11476AD31A71A7460057E271 /* CoreTelephony.framework */,
 				11476ACE1A71A51D0057E271 /* MessageUI.framework */,
 				11476ACC1A71A5130057E271 /* Foundation.framework */,
@@ -381,6 +526,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		113E15321C7ABF760042D7D3 /* PassDayWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 113E155B1C7ABF760042D7D3 /* Build configuration list for PBXNativeTarget "PassDayWatch" */;
+			buildPhases = (
+				113E15311C7ABF760042D7D3 /* Resources */,
+				113E155A1C7ABF760042D7D3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				113E15421C7ABF760042D7D3 /* PBXTargetDependency */,
+			);
+			name = PassDayWatch;
+			productName = PassDayWatch;
+			productReference = 113E15331C7ABF760042D7D3 /* PassDayWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		113E153E1C7ABF760042D7D3 /* PassDayWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 113E15591C7ABF760042D7D3 /* Build configuration list for PBXNativeTarget "PassDayWatch Extension" */;
+			buildPhases = (
+				113E153B1C7ABF760042D7D3 /* Sources */,
+				113E153C1C7ABF760042D7D3 /* Frameworks */,
+				113E153D1C7ABF760042D7D3 /* Resources */,
+				113E15651C7ABFD80042D7D3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PassDayWatch Extension";
+			productName = "PassDayWatch Extension";
+			productReference = 113E153F1C7ABF760042D7D3 /* PassDayWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		1174BE0C1A6F5261009D7DBA /* PassDay */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1174BE301A6F5262009D7DBA /* Build configuration list for PBXNativeTarget "PassDay" */;
@@ -389,17 +569,19 @@
 				1174BE091A6F5261009D7DBA /* Sources */,
 				1174BE0A1A6F5261009D7DBA /* Frameworks */,
 				1174BE0B1A6F5261009D7DBA /* Resources */,
-				1174BE361A6F52B0009D7DBA /* ShellScript */,
+				1174BE361A6F52B0009D7DBA /* Build Number +1 Script */,
 				78831E5775D5485465726912 /* Copy Pods Resources */,
 				BDCB1267ADF4CD184BEB2EB4 /* Embed Pods Frameworks */,
-				11AC7A641BD7435400A0D06F /* ShellScript */,
+				11AC7A641BD7435400A0D06F /* Fabric Script */,
 				11AC7A7B1BD7470300A0D06F /* Embed App Extensions */,
 				11AC7AC71BD74E3100A0D06F /* Embed Frameworks */,
+				112B4F3E1C7A8D2500AACDA6 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				11AC7A761BD7470300A0D06F /* PBXTargetDependency */,
+				113E15531C7ABF760042D7D3 /* PBXTargetDependency */,
 			);
 			name = PassDay;
 			productName = PassDay;
@@ -452,6 +634,14 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Property Atomic Strong SAC";
 				TargetAttributes = {
+					113E15321C7ABF760042D7D3 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = AU3J78BE58;
+					};
+					113E153E1C7ABF760042D7D3 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = AU3J78BE58;
+					};
 					1174BE0C1A6F5261009D7DBA = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = AU3J78BE58;
@@ -478,32 +668,36 @@
 			mainGroup = 1174BE041A6F5261009D7DBA;
 			productRefGroup = 1174BE0E1A6F5261009D7DBA /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 11AC7B0A1BD7604100A0D06F /* Products */;
-					ProjectRef = 11AC7B091BD7604100A0D06F /* PDPasswordOfTheDaySILibrary.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1174BE0C1A6F5261009D7DBA /* PassDay */,
-				1174BE251A6F5261009D7DBA /* PassDayTests */,
 				11AC7A691BD7470300A0D06F /* PassDay Widget */,
+				1174BE251A6F5261009D7DBA /* PassDayTests */,
+				113E15321C7ABF760042D7D3 /* PassDayWatch */,
+				113E153E1C7ABF760042D7D3 /* PassDayWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		11AC7B0F1BD7604100A0D06F /* libPDPasswordOfTheDaySILibrary.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libPDPasswordOfTheDaySILibrary.a;
-			remoteRef = 11AC7B0E1BD7604100A0D06F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
+		113E15311C7ABF760042D7D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113E15391C7ABF760042D7D3 /* Assets.xcassets in Resources */,
+				113E15371C7ABF760042D7D3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113E153D1C7ABF760042D7D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113E15501C7ABF760042D7D3 /* Assets.xcassets in Resources */,
+				113E157A1C7AC7DF0042D7D3 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1174BE0B1A6F5261009D7DBA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -535,31 +729,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1174BE361A6F52B0009D7DBA /* ShellScript */ = {
+		1174BE361A6F52B0009D7DBA /* Build Number +1 Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Build Number +1 Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Auto Increment Version Number Script\nbuildPlist=$INFOPLIST_FILE\n#echo $buildPlist\nCFSVString=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$buildPlist\")\nCFBundleVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\")\nBUILD_NR=${CFBundleVersion##*.}\n    BUILD_NR=$(($BUILD_NR + 1))\n    #echo $BUILD_NR\n    CFBundleVersion=$CFSVString\".0.\"$BUILD_NR\n    #echo $CFBundleVersion\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $CFBundleVersion\" \"$buildPlist\"\n#echo \"Finish\"";
+			shellScript = "# Auto Increment Version Number Script\nbuildPlist=$INFOPLIST_FILE\n#$(SRCROOT)\n#echo $buildPlist\nCFSVString=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$buildPlist\")\nCFBundleVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\")\nBUILD_NR=${CFBundleVersion##*.}\n    BUILD_NR=$(($BUILD_NR + 1))\n    #echo $BUILD_NR\n    CFBundleVersion=$CFSVString\".0.\"$BUILD_NR\n    #echo $CFBundleVersion\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $CFBundleVersion\" \"$buildPlist\"\n#echo \"Finish\"";
 		};
-		11AC7A641BD7435400A0D06F /* ShellScript */ = {
+		11AC7A641BD7435400A0D06F /* Fabric Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Fabric Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" 4b11d00fe22598ba9a20b9a29fffd60b99cd215f 366ca3c9ee37998355bac818317ea77ec5f8be329d1119a241af705b1eae9bff";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 4b11d00fe22598ba9a20b9a29fffd60b99cd215f 366ca3c9ee37998355bac818317ea77ec5f8be329d1119a241af705b1eae9bff";
 		};
 		11AC7A7C1BD747A300A0D06F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -622,6 +818,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		113E153B1C7ABF760042D7D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113E15871C7ACEC40042D7D3 /* PDPasswordOfTheDaySI.m in Sources */,
+				113E154B1C7ABF760042D7D3 /* ExtensionDelegate.m in Sources */,
+				113E156A1C7AC03E0042D7D3 /* PDDatesInterfaceController.m in Sources */,
+				113E15811C7AC8D90042D7D3 /* PDPasswordInterfaceController.m in Sources */,
+				113E15711C7AC1740042D7D3 /* PDDateRowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1174BE091A6F5261009D7DBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -638,6 +846,7 @@
 				1174BE131A6F5261009D7DBA /* main.m in Sources */,
 				113D8A571A70B13100A6484C /* PDCarouselDateCell.m in Sources */,
 				11731FB41A7048C200B89183 /* PDConfigurationViewController.m in Sources */,
+				113E15851C7ACEC40042D7D3 /* PDPasswordOfTheDaySI.m in Sources */,
 				113D8A531A70AD6C00A6484C /* PDCarousel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,6 +863,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113E15861C7ACEC40042D7D3 /* PDPasswordOfTheDaySI.m in Sources */,
 				11AC7AD51BD7537900A0D06F /* PDPassViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,6 +871,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		113E15421C7ABF760042D7D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 113E153E1C7ABF760042D7D3 /* PassDayWatch Extension */;
+			targetProxy = 113E15411C7ABF760042D7D3 /* PBXContainerItemProxy */;
+		};
+		113E15531C7ABF760042D7D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 113E15321C7ABF760042D7D3 /* PassDayWatch */;
+			targetProxy = 113E15521C7ABF760042D7D3 /* PBXContainerItemProxy */;
+		};
 		1174BE281A6F5261009D7DBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1174BE0C1A6F5261009D7DBA /* PassDay */;
@@ -674,6 +894,23 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		113E15351C7ABF760042D7D3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				113E15361C7ABF760042D7D3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		113E157C1C7AC7DF0042D7D3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				113E157B1C7AC7DF0042D7D3 /* Base */,
+				113E157D1C7AC7E00042D7D3 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		1174BE3D1A6F5677009D7DBA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -687,6 +924,7 @@
 			children = (
 				1174BE401A6F5677009D7DBA /* Base */,
 				11476AD51A71AE800057E271 /* es */,
+				112B4F171C7A8C4A00AACDA6 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -712,6 +950,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		113E15551C7ABF760042D7D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = PassDayWatch_Extension;
+				INFOPLIST_FILE = PassDayWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.proatomicdev.PassDay.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		113E15561C7ABF760042D7D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = PassDayWatch_Extension;
+				INFOPLIST_FILE = PassDayWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.proatomicdev.PassDay.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		113E15571C7ABF760042D7D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "PassDayWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.proatomicdev.PassDay.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		113E15581C7ABF760042D7D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "PassDayWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.proatomicdev.PassDay.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 		1174BE2E1A6F5262009D7DBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -775,7 +1087,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -801,7 +1113,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -824,7 +1136,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -880,7 +1192,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -901,7 +1213,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -920,6 +1232,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		113E15591C7ABF760042D7D3 /* Build configuration list for PBXNativeTarget "PassDayWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				113E15571C7ABF760042D7D3 /* Debug */,
+				113E15581C7ABF760042D7D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		113E155B1C7ABF760042D7D3 /* Build configuration list for PBXNativeTarget "PassDayWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				113E15551C7ABF760042D7D3 /* Debug */,
+				113E15561C7ABF760042D7D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1174BE081A6F5261009D7DBA /* Build configuration list for PBXProject "PassDay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -954,6 +1284,7 @@
 				11AC7A7A1BD7470300A0D06F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,7 +11,7 @@
 
 #import "PDPassViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
-#import <PDPasswordOfTheDaySILibrary/PDPasswordOfTheDaySILibrary.h>
+#import "PDPasswordOfTheDaySI.h"
 
 #define Debug 0
 

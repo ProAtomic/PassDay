@@ -1,0 +1,39 @@
+
+/* Class = "UIButton"; normalTitle = "Copy"; ObjectID = "3td-gh-66J"; */
+"3td-gh-66J.normalTitle" = "Copy";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "4t4-2U-sYt"; */
+"4t4-2U-sYt.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Generate"; ObjectID = "JV1-pS-n9j"; */
+"JV1-pS-n9j.normalTitle" = "Generate";
+
+/* Class = "UITextView"; text = "This is a an Arris password of the day generator for various Arris cable modems.\n\nThis a port to Objective-C from Raúl Pedro Santos's Javascript generator. Hat's off to Raúl!\n\nYou can find Raul's original generator on \nhttps://github.com/borfast/arrispwgen \n\nThis is a list of modems for which this password generator generates valid passwords.\nArris CM820A\nArris DG860\nArris DG950A\nArris TM501A\nArris TM602A\nArris TM602B\nArris TM722G\nArris TM802G\nArris TM822G\nArris TG862\nArris TG862A\nArris WBM760A\n\nThis is also an open source project, you can find it at \nhttps://github.com/ProAtomic/PassDay"; ObjectID = "NeQ-ag-tQS"; */
+"NeQ-ag-tQS.text" = "This is a an Arris password of the day generator for various Arris cable modems.\n\nThis a port to Objective-C from Raúl Pedro Santos's Javascript generator. Hat's off to Raúl!\n\nYou can find Raul's original generator on \nhttps://github.com/borfast/arrispwgen \n\nThis is a list of modems for which this password generator generates valid passwords.\nArris CM820A\nArris DG860\nArris DG950A\nArris TM501A\nArris TM602A\nArris TM602B\nArris TM722G\nArris TM802G\nArris TM822G\nArris TG862\nArris TG862A\nArris WBM760A\n\nThis is also an open source project, you can find it at \nhttps://github.com/ProAtomic/PassDay";
+
+/* Class = "UILabel"; text = "Start Date"; ObjectID = "aez-Da-MsN"; */
+"aez-Da-MsN.text" = "Start Date";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "dOI-BF-10X"; */
+"dOI-BF-10X.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "dw7-C5-ga8"; */
+"dw7-C5-ga8.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "Property Atomic Strong SAC. All Rights Reserved"; ObjectID = "mAZ-FS-Ebd"; */
+"mAZ-FS-Ebd.text" = "Property Atomic Strong SAC. All Rights Reserved";
+
+/* Class = "UIButton"; normalTitle = "Reset"; ObjectID = "mRk-W7-lpf"; */
+"mRk-W7-lpf.normalTitle" = "Reset";
+
+/* Class = "UILabel"; text = "This allows you to try a different seed for the password generator. May be useful to test if you found the seed for newer Arris modem models. If you're unsure as to what you should do with this, leave it as is."; ObjectID = "uF4-0t-Wtq"; */
+"uF4-0t-Wtq.text" = "This allows you to try a different seed for the password generator. May be useful to test if you found the seed for newer Arris modem models. If you're unsure as to what you should do with this, leave it as is.";
+
+/* Class = "UITextField"; text = "QWERTYUIOP"; ObjectID = "wM2-Au-SPy"; */
+"wM2-Au-SPy.text" = "QWERTYUIOP";
+
+/* Class = "UILabel"; text = "End Date"; ObjectID = "weD-Zd-eZc"; */
+"weD-Zd-eZc.text" = "End Date";
+
+/* Class = "UIButton"; normalTitle = "Write us"; ObjectID = "ycy-le-JoU"; */
+"ycy-le-JoU.normalTitle" = "Write us";

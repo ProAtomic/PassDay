@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--Info View Controller-->
@@ -22,12 +22,10 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw7-C5-ga8" customClass="PDVolverButton">
                                         <rect key="frame" x="5" y="5" width="78" height="44"/>
-                                        <animations/>
                                         <state key="normal" title="Back" image="volver"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property Atomic Strong SAC. All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="mAZ-FS-Ebd">
                                         <rect key="frame" x="5" y="534" width="590" height="38"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="A9X-Be-z3p"/>
                                         </constraints>
@@ -40,7 +38,6 @@
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="proAtomic" translatesAutoresizingMaskIntoConstraints="NO" id="kIS-Si-TRq">
                                                 <rect key="frame" x="206" y="0.0" width="158" height="128"/>
-                                                <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="158" id="QEu-bi-wz2"/>
                                                     <constraint firstAttribute="height" constant="128" id="syY-yl-ESL"/>
@@ -48,7 +45,6 @@
                                             </imageView>
                                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-ag-tQS">
                                                 <rect key="frame" x="0.0" y="143" width="570" height="332"/>
-                                                <animations/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <string key="text">This is a an Arris password of the day generator for various Arris cable modems.
 
@@ -79,7 +75,6 @@ https://github.com/ProAtomic/PassDay</string>
                                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                             </textView>
                                         </subviews>
-                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="NeQ-ag-tQS" secondAttribute="trailing" id="9uG-uu-sSl"/>
@@ -92,14 +87,12 @@ https://github.com/ProAtomic/PassDay</string>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycy-le-JoU">
                                         <rect key="frame" x="484" y="5" width="101" height="44"/>
-                                        <animations/>
                                         <state key="normal" title="Write us" image="mail"/>
                                         <connections>
                                             <action selector="writeUs:" destination="LVk-XU-yHT" eventType="touchUpInside" id="Gcb-dZ-RRr"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="mAZ-FS-Ebd" secondAttribute="trailing" constant="5" id="0iS-aG-CnU"/>
@@ -116,7 +109,6 @@ https://github.com/ProAtomic/PassDay</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6jU-9p-JVM" firstAttribute="top" secondItem="vPI-ed-5Fa" secondAttribute="bottom" id="bT9-6I-o3f"/>
@@ -153,14 +145,12 @@ https://github.com/ProAtomic/PassDay</string>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aez-Da-MsN">
                                                 <rect key="frame" x="132" y="0.0" width="57" height="15.5"/>
-                                                <animations/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Cf8-lr-Gra" userLabel="Start Date Picker">
                                                 <rect key="frame" x="0.0" y="15.5" width="320" height="216"/>
-                                                <animations/>
                                                 <date key="date" timeIntervalSinceReferenceDate="443567406.17868">
                                                     <!--2015-01-21 21:10:06 +0000-->
                                                 </date>
@@ -170,14 +160,12 @@ https://github.com/ProAtomic/PassDay</string>
                                             </datePicker>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weD-Zd-eZc">
                                                 <rect key="frame" x="134.5" y="231.5" width="52.5" height="15.5"/>
-                                                <animations/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-M8-128" userLabel="End Date Picker">
                                                 <rect key="frame" x="0.0" y="247" width="320" height="216"/>
-                                                <animations/>
                                                 <date key="date" timeIntervalSinceReferenceDate="443567406.17868">
                                                     <!--2015-01-21 21:10:06 +0000-->
                                                 </date>
@@ -186,7 +174,6 @@ https://github.com/ProAtomic/PassDay</string>
                                                 </connections>
                                             </datePicker>
                                         </subviews>
-                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="mLb-M8-128" secondAttribute="trailing" id="Oo5-H2-2xE"/>
@@ -204,7 +191,6 @@ https://github.com/ProAtomic/PassDay</string>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ud9-nj-ptQ">
                                         <rect key="frame" x="15" y="5" width="44" height="44"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="YGS-h2-hUZ"/>
                                             <constraint firstAttribute="height" constant="44" id="p0S-9P-FTZ"/>
@@ -219,7 +205,6 @@ https://github.com/ProAtomic/PassDay</string>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUT-mj-sDJ">
                                         <rect key="frame" x="541" y="5" width="44" height="44"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Xam-XL-5CR"/>
                                             <constraint firstAttribute="width" constant="44" id="sTM-S0-bcJ"/>
@@ -231,7 +216,6 @@ https://github.com/ProAtomic/PassDay</string>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV1-pS-n9j">
                                         <rect key="frame" x="246.5" y="527" width="107" height="43"/>
-                                        <animations/>
                                         <color key="tintColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Generate" image="generar"/>
                                         <connections>
@@ -239,7 +223,6 @@ https://github.com/ProAtomic/PassDay</string>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="JV1-pS-n9j" secondAttribute="centerX" id="6SN-gr-lRK"/>
@@ -255,7 +238,6 @@ https://github.com/ProAtomic/PassDay</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="nVy-g6-ufw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="E5f-AU-lpy"/>
@@ -291,7 +273,6 @@ https://github.com/ProAtomic/PassDay</string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRk-W7-lpf">
                                         <rect key="frame" x="503" y="5" width="82" height="43"/>
-                                        <animations/>
                                         <state key="normal" title="Reset" image="reset"/>
                                         <connections>
                                             <action selector="resetActn:" destination="0gH-RO-YAN" eventType="touchUpInside" id="ddo-Tj-bK9"/>
@@ -305,7 +286,6 @@ https://github.com/ProAtomic/PassDay</string>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="QWERTYUIOP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wM2-Au-SPy">
                                                         <rect key="frame" x="180" y="220.5" width="180" height="26"/>
-                                                        <animations/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="180" id="30G-eg-JTa"/>
                                                         </constraints>
@@ -317,7 +297,6 @@ https://github.com/ProAtomic/PassDay</string>
                                                         </connections>
                                                     </textField>
                                                 </subviews>
-                                                <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="centerX" secondItem="wM2-Au-SPy" secondAttribute="centerX" id="Z5Q-6Z-VeO"/>
@@ -325,7 +304,6 @@ https://github.com/ProAtomic/PassDay</string>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" secondItem="EXa-jY-Qjt" secondAttribute="height" id="5kn-vh-06W"/>
                                             <constraint firstItem="EXa-jY-Qjt" firstAttribute="top" secondItem="Y3E-Wx-v6s" secondAttribute="top" id="IId-EF-Q9H"/>
@@ -337,7 +315,6 @@ https://github.com/ProAtomic/PassDay</string>
                                     </scrollView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="570" translatesAutoresizingMaskIntoConstraints="NO" id="uF4-0t-Wtq">
                                         <rect key="frame" x="15" y="519.5" width="570" height="45.5"/>
-                                        <animations/>
                                         <string key="text">This allows you to try a different seed for the password generator. May be useful to test if you found the seed for newer Arris modem models. If you're unsure as to what you should do with this, leave it as is.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -345,11 +322,9 @@ https://github.com/ProAtomic/PassDay</string>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOI-BF-10X" customClass="PDVolverButton">
                                         <rect key="frame" x="5" y="5" width="78" height="44"/>
-                                        <animations/>
                                         <state key="normal" title="Back" image="volver"/>
                                     </button>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Y3E-Wx-v6s" firstAttribute="leading" secondItem="3gu-i5-yQx" secondAttribute="leading" constant="30" id="ALb-l3-yiB"/>
@@ -366,7 +341,6 @@ https://github.com/ProAtomic/PassDay</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="3gu-i5-yQx" secondAttribute="trailing" id="5W1-UW-MJS"/>
@@ -400,12 +374,10 @@ https://github.com/ProAtomic/PassDay</string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4t4-2U-sYt" customClass="PDVolverButton">
                                         <rect key="frame" x="5" y="5" width="78" height="44"/>
-                                        <animations/>
                                         <state key="normal" title="Back" image="volver"/>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydn-Iy-R1w" customClass="PDCarousel">
                                         <rect key="frame" x="30" y="54" width="540" height="501"/>
-                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="dataSource" destination="wsO-cm-9Og" id="Ll8-uo-3Kt"/>
@@ -414,7 +386,6 @@ https://github.com/ProAtomic/PassDay</string>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3td-gh-66J">
                                         <rect key="frame" x="506" y="5" width="79" height="43"/>
-                                        <animations/>
                                         <state key="normal" title="Copy" image="copiar"/>
                                         <connections>
                                             <action selector="copyActn:" destination="wsO-cm-9Og" eventType="touchUpInside" id="Dj5-Up-Lh7"/>
@@ -422,14 +393,12 @@ https://github.com/ProAtomic/PassDay</string>
                                     </button>
                                     <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UzY-fD-5qN">
                                         <rect key="frame" x="30" y="290" width="540" height="30"/>
-                                        <animations/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="YyK-hH-U5j"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="UzY-fD-5qN" firstAttribute="centerY" secondItem="ydn-Iy-R1w" secondAttribute="centerY" id="2KU-mB-rKp"/>
@@ -446,7 +415,6 @@ https://github.com/ProAtomic/PassDay</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8Ji-37-w0O" firstAttribute="top" secondItem="9Fs-hi-Y8N" secondAttribute="bottom" id="TfP-aX-OlB"/>
