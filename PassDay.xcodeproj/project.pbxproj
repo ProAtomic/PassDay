@@ -550,6 +550,7 @@
 				113E153B1C7ABF760042D7D3 /* Sources */,
 				113E153C1C7ABF760042D7D3 /* Frameworks */,
 				113E153D1C7ABF760042D7D3 /* Resources */,
+				113E15881C7AD49C0042D7D3 /* Build Number +1 Script */,
 				113E15651C7ABFD80042D7D3 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -613,7 +614,7 @@
 				11AC7A661BD7470300A0D06F /* Sources */,
 				11AC7A671BD7470300A0D06F /* Frameworks */,
 				11AC7A681BD7470300A0D06F /* Resources */,
-				11AC7A7C1BD747A300A0D06F /* ShellScript */,
+				11AC7A7C1BD747A300A0D06F /* Build Number +1 Script */,
 			);
 			buildRules = (
 			);
@@ -729,6 +730,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		113E15881C7AD49C0042D7D3 /* Build Number +1 Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Number +1 Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Auto Increment Version Number Script\nbuildPlist=$INFOPLIST_FILE\n#echo $buildPlist\nCFSVString=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$buildPlist\")\nCFBundleVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\")\nBUILD_NR=${CFBundleVersion##*.}\n    BUILD_NR=$(($BUILD_NR + 1))\n    #echo $BUILD_NR\n    CFBundleVersion=$CFSVString\".0.\"$BUILD_NR\n    #echo $CFBundleVersion\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $CFBundleVersion\" \"$buildPlist\"\n#echo \"Finish\"";
+		};
 		1174BE361A6F52B0009D7DBA /* Build Number +1 Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -757,13 +772,14 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" 4b11d00fe22598ba9a20b9a29fffd60b99cd215f 366ca3c9ee37998355bac818317ea77ec5f8be329d1119a241af705b1eae9bff";
 		};
-		11AC7A7C1BD747A300A0D06F /* ShellScript */ = {
+		11AC7A7C1BD747A300A0D06F /* Build Number +1 Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Build Number +1 Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
